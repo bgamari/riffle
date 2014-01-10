@@ -6,6 +6,13 @@ name=water-quality
 TSYMS = $(wildcard sym/*.tsym)
 TSYMBOLS := $(TSYMS:.tsym=.sym)
 SYMBOLS := $(sort $(TSYMBOLS) $(wildcard sym/*.sym))
+SCHEMATICS := $(wildcard sym/*.sch)
+
+%.sch.pdf : %.sch
+	gaf export -o $@ $<
+
+schematics.pdf : $(name).sch.pdf $(SCHEMATICS:.sch=.sch.pdf)
+	pdfjoin -o $@ $+
 
 tsymbols : $(TSYMBOLS)
 
