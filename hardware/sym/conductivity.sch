@@ -19,7 +19,7 @@ C 45200 48400 1 90 0 capacitor-1.sym
 T 44500 48600 5 10 0 0 90 0 1
 device=CAPACITOR
 T 44900 48500 5 10 1 1 90 0 1
-refdes=C4
+refdes=C3
 T 44300 48600 5 10 0 0 90 0 1
 symversion=0.1
 T 44900 49000 5 10 1 1 90 0 1
@@ -50,7 +50,7 @@ C 45200 45700 1 180 0 capacitor-1.sym
 T 45000 45000 5 10 0 0 180 0 1
 device=CAPACITOR
 T 45000 45200 5 10 1 1 180 0 1
-refdes=C3
+refdes=C4
 T 45000 44800 5 10 0 0 180 0 1
 symversion=0.1
 }
@@ -222,12 +222,12 @@ C 52000 43000 1 90 0 resistor-1.sym
 T 51600 43300 5 10 0 0 90 0 1
 device=RESISTOR
 T 51700 43200 5 10 1 1 90 0 1
-refdes=R1
+refdes=R2
 }
 C 52000 42100 1 90 0 resistor-1.sym
 {
 T 51600 42400 5 10 0 0 90 0 1
 device=RESISTOR
 T 51700 42300 5 10 1 1 90 0 1
-refdes=R1
+refdes=R3
 }
