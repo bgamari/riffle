@@ -8,12 +8,6 @@ TSYMBOLS := $(TSYMS:.tsym=.sym)
 SYMBOLS := $(sort $(TSYMBOLS) $(wildcard sym/*.sym))
 SCHEMATICS := $(wildcard sym/*.sch)
 
-%.sch.pdf : %.sch
-	gaf export -o $@ $<
-
-schematics.pdf : $(name).sch.pdf $(SCHEMATICS:.sch=.sch.pdf)
-	pdfjoin -o $@ $+
-
 tsymbols : $(TSYMBOLS)
 
 check-symbols : $(TSYMBOLS)
@@ -36,6 +30,12 @@ pcb : symbols
 
 %.pdf : %.ps
 	ps2pdf $< $@
+
+%.sch.pdf : %.sch
+	gaf export -o $@ $<
+
+schematics.pdf : $(name).sch.pdf $(SCHEMATICS:.sch=.sch.pdf)
+	pdfjoin -o $@ $+
 
 .PHONY : gerbers
 gerbers : $(name).pcb $(name).bom
