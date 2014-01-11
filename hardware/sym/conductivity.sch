@@ -6,6 +6,8 @@ T 47600 45500 5 10 0 0 0 0 1
 device=TLC555
 T 47100 43100 5 10 1 1 0 0 1
 refdes=U2
+T 45300 43100 5 10 0 0 0 0 1
+footprint=SOIC-127P-600L1-8N
 }
 C 49200 44600 1 0 0 resistor-1.sym
 {
