@@ -33,15 +33,6 @@ value=10u
 T 45200 48400 5 10 0 1 0 0 1
 footprint=0603
 }
-C 51100 46200 1 0 0 opamp-1.sym
-{
-T 51800 47000 5 10 0 0 0 0 1
-device=OPAMP
-T 51800 46800 5 10 1 1 0 0 1
-refdes=U3
-T 51800 47600 5 10 0 0 0 0 1
-symversion=0.1
-}
 C 45200 43200 1 0 0 gnd-1.sym
 C 44900 48100 1 0 0 gnd-1.sym
 C 48500 44400 1 180 0 capacitor-1.sym
@@ -249,3 +240,14 @@ T 42500 45300 9 12 1 0 0 0 3
 Pull-up resistor should
 be provided externally
 for OUT signal.
+C 51100 46200 1 0 0 opa320.sym
+{
+T 51800 47000 5 10 0 0 0 0 1
+device=OPAMP
+T 51800 46800 5 10 1 1 0 0 1
+refdes=U3
+T 51800 47600 5 10 0 0 0 0 1
+symversion=0.1
+T 51800 47800 5 10 0 0 0 0 1
+footprint=SOT23-5-95P.fp
+}
