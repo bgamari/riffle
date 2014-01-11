@@ -1,6 +1,10 @@
 v 20121203 2
 C 52300 28150 0 0 0 title-B.sym
-C 65600 37200 1 0 0 conductivity.sym
+C 65600 36700 1 0 0 conductivity.sym
+{
+T 68100 38100 5 10 1 1 0 0 1
+refdes=EC
+}
 T 62300 28900 9 16 1 0 0 0 1
 Water quality sensor
 C 66800 34700 1 0 0 header3-1.sym
@@ -332,3 +336,49 @@ netname=WAKEUP
 }
 T 55500 35600 9 12 1 0 0 6 1
 PTD4
+C 53200 30000 1 90 0 capacitor-1.sym
+{
+T 52500 30200 5 10 0 0 90 0 1
+device=CAPACITOR
+T 52900 30100 5 10 1 1 90 0 1
+refdes=C1
+T 52300 30200 5 10 0 0 90 0 1
+symversion=0.1
+T 52900 30600 5 10 1 1 90 0 1
+value=10u
+T 52900 30400 5 10 0 1 0 0 1
+footprint=0603
+}
+C 52800 30900 1 0 0 3.3V-plus-1.sym
+C 52900 29700 1 0 0 gnd-1.sym
+C 69000 36000 1 90 0 capacitor-1.sym
+{
+T 68300 36200 5 10 0 0 90 0 1
+device=CAPACITOR
+T 68100 36200 5 10 0 0 90 0 1
+symversion=0.1
+T 68700 36400 5 10 0 1 0 0 1
+footprint=0603
+T 68700 36100 5 10 1 1 90 0 1
+refdes=C2
+T 68700 36600 5 10 1 1 90 0 1
+value=10u
+}
+C 68600 36900 1 0 0 3.3V-plus-1.sym
+C 68700 35700 1 0 0 gnd-1.sym
+C 69000 32500 1 90 0 capacitor-1.sym
+{
+T 68300 32700 5 10 0 0 90 0 1
+device=CAPACITOR
+T 68100 32700 5 10 0 0 90 0 1
+symversion=0.1
+T 68700 32900 5 10 0 1 0 0 1
+footprint=0603
+T 68700 32600 5 10 1 1 90 0 1
+refdes=C3
+T 68700 33100 5 10 1 1 90 0 1
+value=10u
+}
+C 68600 33400 1 0 0 3.3V-plus-1.sym
+C 68700 32200 1 0 0 gnd-1.sym
+C 65300 37100 1 270 0 gnd-1.sym
