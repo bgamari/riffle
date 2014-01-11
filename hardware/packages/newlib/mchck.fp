@@ -1,5 +1,12 @@
 Element["" "" "" "" 1300.00mil 540.00mil 0.0000 0.0000 0 100 ""]
 (
+        ElementLine[  -50mil     -350mil     1350mil    -350mil      10mil]
+        ElementLine[ 1350mil     -350mil     1350mil    -150mil      10mil]
+        ElementLine[ 1350mil     -150mil      950mil    -150mil      10mil]
+        ElementLine[  950mil     -150mil      950mil    -250mil      10mil]
+        ElementLine[  950mil     -250mil      -50mil    -250mil      10mil]
+        ElementLine[  -50mil     -250mil      -50mil    -350mil      10mil]
+        
 	Pin[   0mil -300mil 60.00mil 30.00mil 66.00mil 38.00mil "PL1"  "PL1"  ""]
 	Pin[ 100mil -300mil 60.00mil 30.00mil 66.00mil 38.00mil "PL2"  "PL2"  ""]
 	Pin[ 200mil -300mil 60.00mil 30.00mil 66.00mil 38.00mil "PL3"  "PL3"  ""]
@@ -14,6 +21,18 @@ Element["" "" "" "" 1300.00mil 540.00mil 0.0000 0.0000 0 100 ""]
 	Pin[1100mil -300mil 60.00mil 30.00mil 66.00mil 38.00mil "PL12" "PL12" ""]
 	Pin[1200mil -300mil 60.00mil 30.00mil 66.00mil 38.00mil "PL13" "PL13" ""]
 	Pin[1300mil -300mil 60.00mil 30.00mil 66.00mil 38.00mil "PL14" "PL14" ""]
+
+	Pin[1000mil -200mil 60.00mil 30.00mil 66.00mil 38.00mil "PD1"  "PD1"  ""]
+	Pin[1100mil -200mil 60.00mil 30.00mil 66.00mil 38.00mil "PD2"  "PD2"  ""]
+	Pin[1200mil -200mil 60.00mil 30.00mil 66.00mil 38.00mil "PD3"  "PD3"  ""]
+	Pin[1300mil -200mil 60.00mil 30.00mil 66.00mil 38.00mil "PD4"  "PD4"  ""]
+
+        ElementLine[  -50mil      350mil     1350mil     350mil      10mil]
+        ElementLine[ 1350mil      350mil     1350mil     150mil      10mil]
+        ElementLine[ 1350mil      150mil      750mil     150mil      10mil]
+        ElementLine[  750mil      150mil      750mil     250mil      10mil]
+        ElementLine[  750mil      250mil      -50mil     250mil      10mil]
+        ElementLine[  -50mil      250mil      -50mil     350mil      10mil]
 
 	Pin[   0mil  300mil 60.00mil 30.00mil 66.00mil 38.00mil "PU1"  "PU1"  ""]
 	Pin[ 100mil  300mil 60.00mil 30.00mil 66.00mil 38.00mil "PU2"  "PU2"  ""]

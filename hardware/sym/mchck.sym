@@ -376,7 +376,7 @@ pintype=pwr
 P 2200 1800 1900 1800 1 0 0
 {
 T 2000 1850 5 8 0 1 0 0 1
-pinnumber=30
+pinnumber=PD1
 T 2000 1750 5 8 0 1 0 2 1
 pinseq=35
 T 1850 1800 9 8 1 1 0 6 1
@@ -387,7 +387,7 @@ pintype=io
 P 2200 1500 1900 1500 1 0 0
 {
 T 2000 1550 5 8 0 1 0 0 1
-pinnumber=31
+pinnumber=PD2
 T 2000 1450 5 8 0 1 0 2 1
 pinseq=36
 T 1850 1500 9 8 1 1 0 6 1
@@ -398,7 +398,7 @@ pintype=io
 P 2200 1200 1900 1200 1 0 0
 {
 T 2000 1250 5 8 0 1 0 0 1
-pinnumber=32
+pinnumber=PD3
 T 2000 1150 5 8 0 1 0 2 1
 pinseq=37
 T 1850 1200 9 8 1 1 0 6 1
@@ -409,7 +409,7 @@ pintype=pwr
 P 2200 900 1900 900 1 0 0
 {
 T 2000 950 5 8 0 1 0 0 1
-pinnumber=33
+pinnumber=PD4
 T 2000 850 5 8 0 1 0 2 1
 pinseq=38
 T 1850 900 9 8 1 1 0 6 1
