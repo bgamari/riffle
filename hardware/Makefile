@@ -22,7 +22,7 @@ clean :
 pcb : symbols
 	gsch2pcb project | tee pcb.log
 
-%.ps : %.pcb
+%.pcb.ps : %.pcb
 	pcb -x ps --psfile $@ $<
 
 %.bom : %.sch
@@ -35,6 +35,9 @@ pcb : symbols
 	gaf export -o $@ $<
 
 schematics.pdf : $(name).sch.pdf $(SCHEMATICS:.sch=.sch.pdf)
+	pdfjoin -o $@ $+
+
+overview.pdf : schematics.pdf $(name).pcb.pdf
 	pdfjoin -o $@ $+
 
 .PHONY : gerbers
