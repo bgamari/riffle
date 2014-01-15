@@ -21,9 +21,9 @@ pintype=in
 P 0 200 200 200 1 0 0
 {
 T 150 250 5 8 1 1 0 6 1
-pinnumber=2
+pinnumber=4
 T 150 150 5 8 0 1 0 8 1
-pinseq=2
+pinseq=4
 T 250 200 9 8 0 1 0 0 1
 pinlabel=in-
 T 250 200 5 8 0 1 0 2 1
