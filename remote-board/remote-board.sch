@@ -251,7 +251,7 @@ footprint=pads5
 C 55400 31400 1 0 1 connector4-2.sym
 {
 T 54700 33500 5 10 1 1 0 0 1
-refdes=CONN
+refdes=I2C
 T 55100 33450 5 10 0 0 0 6 1
 device=CONNECTOR_4
 T 55100 33650 5 10 0 0 0 6 1
