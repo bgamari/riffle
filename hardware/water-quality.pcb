@@ -1569,6 +1569,19 @@ Layer(8 "spare")
 (
 	Line[52.5350mm 46.2250mm 56.6850mm 46.2250mm 10.00mil 20.00mil "clearline"]
 	Line[52.5350mm 49.0250mm 56.6850mm 49.0250mm 10.00mil 20.00mil "clearline"]
+)
+Layer(9 "silk")
+(
+)
+Layer(10 "silk")
+(
+	Line[2475.00mil 1645.00mil 2475.00mil 1670.00mil 10.00mil 20.00mil "clearline"]
+	Line[2445.00mil 1670.00mil 2505.00mil 1670.00mil 10.00mil 20.00mil "clearline"]
+	Line[2455.00mil 1690.00mil 2495.00mil 1690.00mil 10.00mil 20.00mil "clearline"]
+	Line[2465.00mil 1710.00mil 2485.00mil 1710.00mil 10.00mil 20.00mil "clearline"]
+	Text[2245.00mil 1730.00mil 1 100 "CLK" "clearline"]
+	Text[2345.00mil 1725.00mil 1 100 "DIO" "clearline"]
+	Text[1510.00mil 2110.00mil 0 122 "Water quality sensor v.1" "clearline"]
 	Polygon("pin,via")
 	(
 		[33.9286mm 50.3138mm] [33.9075mm 50.3220mm] [33.8955mm 50.3413mm] [33.8831mm 50.4020mm] [33.8737mm 50.4584mm] 
@@ -1612,19 +1625,6 @@ Layer(8 "spare")
 		[34.7510mm 51.0222mm] [34.7391mm 50.9999mm] [34.6398mm 50.4584mm] [34.6286mm 50.4020mm] [34.6161mm 50.3413mm] 
 		[34.6042mm 50.3220mm] [34.5831mm 50.3138mm] [33.9286mm 50.3138mm] 
 	)
-)
-Layer(9 "silk")
-(
-)
-Layer(10 "silk")
-(
-	Line[2475.00mil 1645.00mil 2475.00mil 1670.00mil 10.00mil 20.00mil "clearline"]
-	Line[2445.00mil 1670.00mil 2505.00mil 1670.00mil 10.00mil 20.00mil "clearline"]
-	Line[2455.00mil 1690.00mil 2495.00mil 1690.00mil 10.00mil 20.00mil "clearline"]
-	Line[2465.00mil 1710.00mil 2485.00mil 1710.00mil 10.00mil 20.00mil "clearline"]
-	Text[2245.00mil 1730.00mil 1 100 "CLK" "clearline"]
-	Text[2345.00mil 1725.00mil 1 100 "DIO" "clearline"]
-	Text[1510.00mil 2110.00mil 0 122 "Water quality sensor v.1" "clearline"]
 )
 NetList()
 (
