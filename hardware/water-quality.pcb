@@ -5,11 +5,11 @@ FileVersion[20091103]
 
 PCB["" 6000.00mil 5000.00mil]
 
-Grid[1000.000000 0.0000 0.0000 0]
+Grid[2500.000000 0.0000 0.0000 0]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[10.00mil 10.00mil 10.00mil 10.00mil 15.00mil 8.00mil]
-Flags("showdrc,nameonpcb,clearnew,snappin,thindrawpoly,onlynames")
+Flags("showdrc,nameonpcb,clearnew,snappin,thindrawpoly")
 Groups("1,8,c:2,s:3:4:5:6:7")
 Styles["Signal,10.00mil,36.00mil,20.00mil,10.00mil:Power,25.00mil,60.00mil,35.00mil,10.00mil:Fat,40.00mil,60.00mil,35.00mil,10.00mil:Skinny,6.00mil,24.02mil,11.81mil,6.00mil"]
 
@@ -786,7 +786,7 @@ Symbol['~' 12.00mil]
 	SymbolLine[20.00mil 35.00mil 25.00mil 30.00mil 8.00mil]
 )
 Attribute("PCB::grid::unit" "mil")
-Attribute("PCB::grid::size" "10.00mil")
+Attribute("PCB::grid::size" "25.00mil")
 Via[1650.00mil 1900.00mil 60.00mil 20.00mil 0.0000 35.00mil "" ""]
 Via[1675.00mil 1625.00mil 60.00mil 20.00mil 0.0000 35.00mil "" ""]
 Via[2225.00mil 1750.00mil 60.00mil 20.00mil 0.0000 35.00mil "" ""]
@@ -842,7 +842,7 @@ Element["" "0603" "EC/C6" "2.2u" 36.2100mm 1775.00mil -56.50mil -81.50mil 0 100 
 
 	)
 
-Element["" "0603" "EC/C7" "2.2u" 36.2100mm 1875.00mil 16.50mil 28.50mil 3 100 ""]
+Element["" "0603" "EC/C7" "2.2u" 36.2100mm 1875.00mil -1.1961mm 0.5819mm 0 100 ""]
 (
 	Pad[25.59mil -4.92mil 25.59mil 4.92mil 29.52mil 20.00mil 35.52mil "1" "1" "square"]
 	Pad[-25.59mil -4.92mil -25.59mil 4.92mil 29.52mil 20.00mil 35.52mil "2" "2" "square"]
@@ -973,10 +973,10 @@ Element["" "SOIC-127P-600L1-8N" "EC/U2" "unknown" 1755.50mil 1775.00mil -73.50mi
 
 	)
 
-Element["" "0603" "EC/R1" "3.3k" 1575.00mil 45.1000mm 31.50mil 53.50mil 3 100 ""]
+Element["selected" "0603" "EC/R1" "3.3k" 1575.00mil 45.1000mm 31.50mil 53.50mil 3 100 "selected"]
 (
-	Pad[-4.92mil -25.59mil 4.92mil -25.59mil 29.52mil 20.00mil 35.52mil "1" "1" "square"]
-	Pad[-4.92mil 25.59mil 4.92mil 25.59mil 37.39mil 20.00mil 43.39mil "2" "2" "square"]
+	Pad[-4.92mil -25.59mil 4.92mil -25.59mil 29.52mil 20.00mil 35.52mil "1" "1" "selected,square"]
+	Pad[-4.92mil 25.59mil 4.92mil 25.59mil 27.39mil 20.00mil 33.39mil "2" "2" "selected,square"]
 
 	)
 
@@ -1196,7 +1196,7 @@ Element["hidename" "0603" "TURB/R5" "10k" 2455.00mil 1300.00mil 31.50mil -31.50m
 
 	)
 
-Element["" "JUMPER4" "I2C" "unknown" 2850.00mil 1675.00mil 50.00mil -50.00mil 2 100 ""]
+Element["" "JUMPER4" "I2C" "unknown" 2875.00mil 1675.00mil -325.00mil 50.00mil 0 100 ""]
 (
 	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "1" "1" "square,edge2"]
 	Pin[-100.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "2" "2" "edge2"]
@@ -1211,46 +1211,46 @@ Element["" "JUMPER4" "I2C" "unknown" 2850.00mil 1675.00mil 50.00mil -50.00mil 2 
 
 	)
 
-Element["onsolder" "mchck" "U1" "unknown" 1600.00mil 1750.00mil 0.0000 0.0000 0 100 "auto"]
+Element["onsolder,lock" "mchck" "U1" "unknown" 1600.00mil 1750.00mil 0.0000 0.0000 0 100 "auto"]
 (
-	Pin[0.0000 -300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PL1" "PL1" "edge2"]
-	Pin[100.00mil -300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PL2" "PL2" "edge2"]
-	Pin[200.00mil -300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PL3" "PL3" "edge2"]
-	Pin[300.00mil -300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PL4" "PL4" "edge2"]
-	Pin[400.00mil -300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PL5" "PL5" "edge2"]
-	Pin[500.00mil -300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PL6" "PL6" "edge2"]
-	Pin[600.00mil -300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PL7" "PL7" "edge2"]
-	Pin[700.00mil -300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PL8" "PL8" "edge2"]
-	Pin[800.00mil -300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PL9" "PL9" "edge2"]
-	Pin[900.00mil -300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PL10" "PL10" "edge2"]
-	Pin[1000.00mil -300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PL11" "PL11" "edge2"]
-	Pin[1100.00mil -300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PL12" "PL12" "edge2"]
-	Pin[1200.00mil -300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PL13" "PL13" "edge2,thermal(1X)"]
-	Pin[1300.00mil -300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PL14" "PL14" "edge2"]
-	Pin[1000.00mil -200.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PD1" "PD1" "edge2"]
-	Pin[1100.00mil -200.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PD2" "PD2" "edge2"]
-	Pin[1200.00mil -200.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PD3" "PD3" "edge2,thermal(1X)"]
-	Pin[1300.00mil -200.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PD4" "PD4" "edge2"]
-	Pin[0.0000 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PU1" "PU1" "edge2"]
-	Pin[100.00mil 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PU2" "PU2" "edge2"]
-	Pin[200.00mil 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PU3" "PU3" "edge2"]
-	Pin[300.00mil 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PU4" "PU4" "edge2"]
-	Pin[400.00mil 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PU5" "PU5" "edge2"]
-	Pin[500.00mil 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PU6" "PU6" "edge2"]
-	Pin[600.00mil 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PU7" "PU7" "edge2"]
-	Pin[700.00mil 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PU8" "PU8" "edge2"]
-	Pin[800.00mil 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PU9" "PU9" "edge2"]
-	Pin[900.00mil 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PU10" "PU10" "edge2"]
-	Pin[1000.00mil 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PU11" "PU11" "edge2"]
-	Pin[1100.00mil 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PU12" "PU12" "edge2,thermal(1X)"]
-	Pin[1200.00mil 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PU13" "PU13" "edge2"]
-	Pin[1300.00mil 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PU14" "PU14" "edge2"]
-	Pin[800.00mil 200.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PR1" "PR1" "edge2"]
-	Pin[900.00mil 200.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PR2" "PR2" "edge2"]
-	Pin[1000.00mil 200.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PR3" "PR3" "edge2"]
-	Pin[1100.00mil 200.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PR4" "PR4" "edge2"]
-	Pin[1200.00mil 200.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PR5" "PR5" "edge2"]
-	Pin[1300.00mil 200.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PR6" "PR6" "edge2"]
+	Pin[0.0000 -300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PL1" "PL1" "lock,edge2"]
+	Pin[100.00mil -300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PL2" "PL2" "lock,edge2"]
+	Pin[200.00mil -300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PL3" "PL3" "lock,edge2"]
+	Pin[300.00mil -300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PL4" "PL4" "lock,edge2"]
+	Pin[400.00mil -300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PL5" "PL5" "lock,edge2"]
+	Pin[500.00mil -300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PL6" "PL6" "lock,edge2"]
+	Pin[600.00mil -300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PL7" "PL7" "lock,edge2"]
+	Pin[700.00mil -300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PL8" "PL8" "lock,edge2"]
+	Pin[800.00mil -300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PL9" "PL9" "lock,edge2"]
+	Pin[900.00mil -300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PL10" "PL10" "lock,edge2"]
+	Pin[1000.00mil -300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PL11" "PL11" "lock,edge2"]
+	Pin[1100.00mil -300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PL12" "PL12" "lock,edge2"]
+	Pin[1200.00mil -300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PL13" "PL13" "lock,edge2,thermal(1X)"]
+	Pin[1300.00mil -300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PL14" "PL14" "lock,edge2"]
+	Pin[1000.00mil -200.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PD1" "PD1" "lock,edge2"]
+	Pin[1100.00mil -200.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PD2" "PD2" "lock,edge2"]
+	Pin[1200.00mil -200.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PD3" "PD3" "lock,edge2,thermal(1X)"]
+	Pin[1300.00mil -200.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PD4" "PD4" "lock,edge2"]
+	Pin[0.0000 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PU1" "PU1" "lock,edge2"]
+	Pin[100.00mil 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PU2" "PU2" "lock,edge2"]
+	Pin[200.00mil 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PU3" "PU3" "lock,edge2"]
+	Pin[300.00mil 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PU4" "PU4" "lock,edge2"]
+	Pin[400.00mil 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PU5" "PU5" "lock,edge2"]
+	Pin[500.00mil 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PU6" "PU6" "lock,edge2"]
+	Pin[600.00mil 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PU7" "PU7" "lock,edge2"]
+	Pin[700.00mil 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PU8" "PU8" "lock,edge2"]
+	Pin[800.00mil 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PU9" "PU9" "lock,edge2"]
+	Pin[900.00mil 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PU10" "PU10" "lock,edge2"]
+	Pin[1000.00mil 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PU11" "PU11" "lock,edge2"]
+	Pin[1100.00mil 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PU12" "PU12" "lock,edge2,thermal(1X)"]
+	Pin[1200.00mil 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PU13" "PU13" "lock,edge2"]
+	Pin[1300.00mil 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PU14" "PU14" "lock,edge2"]
+	Pin[800.00mil 200.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PR1" "PR1" "lock,edge2"]
+	Pin[900.00mil 200.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PR2" "PR2" "lock,edge2"]
+	Pin[1000.00mil 200.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PR3" "PR3" "lock,edge2"]
+	Pin[1100.00mil 200.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PR4" "PR4" "lock,edge2"]
+	Pin[1200.00mil 200.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PR5" "PR5" "lock,edge2"]
+	Pin[1300.00mil 200.00mil 60.00mil 30.00mil 66.00mil 38.00mil "PR6" "PR6" "lock,edge2"]
 	ElementLine [-50.00mil -350.00mil 1350.00mil -350.00mil 10.00mil]
 	ElementLine [1350.00mil -350.00mil 1350.00mil -150.00mil 10.00mil]
 	ElementLine [1350.00mil -150.00mil 950.00mil -150.00mil 10.00mil]
@@ -1569,6 +1569,49 @@ Layer(8 "spare")
 (
 	Line[52.5350mm 46.2250mm 56.6850mm 46.2250mm 10.00mil 20.00mil "clearline"]
 	Line[52.5350mm 49.0250mm 56.6850mm 49.0250mm 10.00mil 20.00mil "clearline"]
+	Polygon("pin,via")
+	(
+		[33.9286mm 50.3138mm] [33.9075mm 50.3220mm] [33.8955mm 50.3413mm] [33.8831mm 50.4020mm] [33.8737mm 50.4584mm] 
+		[33.7726mm 50.9999mm] [33.7612mm 51.0222mm] [33.7398mm 51.0370mm] [33.7137mm 51.0469mm] [33.5130mm 51.1167mm] 
+		[33.3235mm 51.2067mm] [33.3207mm 51.2079mm] [33.2989mm 51.2161mm] [1310.00mil 51.2206mm] [33.2491mm 51.2133mm] 
+		[32.7988mm 50.9036mm] [32.7518mm 50.8704mm] [32.6995mm 50.8358mm] [32.6774mm 50.8310mm] [32.6565mm 50.8401mm] 
+		[32.2776mm 51.2188mm] [32.2364mm 51.2587mm] [32.1937mm 2019.80mil] [32.1838mm 51.3245mm] [1267.30mil 51.3471mm] 
+		[32.2240mm 51.3982mm] [32.2572mm 2025.40mil] [1281.90mil 51.8874mm] [32.5674mm 51.9107mm] [32.5631mm 2044.70mil] 
+		[32.5531mm 51.9605mm] [32.3781mm 52.3685mm] [32.3687mm 52.3903mm] [32.3527mm 52.4114mm] [32.3301mm 52.4233mm] 
+		[31.8120mm 52.5201mm] [31.7556mm 52.5295mm] [31.6949mm 52.5419mm] [31.6748mm 52.5539mm] [31.6674mm 52.5750mm] 
+		[31.6674mm 53.2295mm] [31.6748mm 53.2514mm] [31.6949mm 53.2641mm] [31.7556mm 53.2750mm] [31.8120mm 53.2859mm] 
+		[32.3152mm 53.3796mm] [32.3370mm 53.3918mm] [32.3507mm 53.4129mm] [32.3591mm 53.4294mm] [32.5394mm 53.8800mm] 
+		[32.5450mm 53.8952mm] [32.5493mm 53.9209mm] [32.5422mm 53.9448mm] [32.2572mm 54.3593mm] [32.2240mm 54.4078mm] 
+		[1267.30mil 54.4589mm] [32.1838mm 54.4807mm] [32.1937mm 54.5015mm] [32.2364mm 54.5470mm] [32.2776mm 54.5869mm] 
+		[32.4046mm 54.7136mm] [32.4460mm 54.7538mm] [32.5725mm 54.8805mm] [32.6123mm 54.9217mm] [32.6565mm 54.9643mm] 
+		[32.6774mm 54.9747mm] [32.6995mm 54.9702mm] [32.7518mm 54.9341mm] [32.7988mm 54.9026mm] [33.2036mm 54.6240mm] 
+		[1308.20mil 54.6166mm] [33.2534mm 54.6214mm] [1312.50mil 54.6682mm] [33.3886mm 54.6959mm] [33.4754mm 54.7411mm] 
+		[33.4968mm 54.7426mm] [33.5123mm 54.7273mm] [33.5498mm 54.6367mm] [33.5717mm 54.5841mm] [33.9230mm 2115.40mil] 
+		[33.9453mm 53.6788mm] [33.9700mm 53.6197mm] [33.9712mm 53.5955mm] [33.9575mm 53.5770mm] [33.9011mm 53.5437mm] 
+		[33.8666mm 53.5163mm] [33.7297mm 53.4030mm] [1323.80mil 53.2597mm] [33.5567mm 53.0924mm] [1320.20mil 52.9069mm] 
+		[33.5481mm 2077.20mil] [33.5900mm 52.6252mm] [33.6565mm 52.5021mm] [33.7449mm 52.3949mm] [33.8521mm 2059.30mil] 
+		[33.9748mm 52.2392mm] [34.1107mm 52.1973mm] [34.2567mm 52.1825mm] [34.4025mm 52.1973mm] [34.5382mm 52.2392mm] 
+		[34.6611mm 2059.30mil] [34.7678mm 52.3949mm] [1372.30mil 52.5021mm] [34.9232mm 52.6252mm] [34.9651mm 2077.20mil] 
+		[34.9799mm 52.9069mm] [34.9560mm 53.0924mm] [34.8882mm 53.2597mm] [1369.40mil 53.4030mm] [34.6466mm 53.5163mm] 
+		[34.6108mm 53.5437mm] [1360.40mil 53.5770mm] [34.5407mm 53.5955mm] [34.5417mm 53.6197mm] [34.5664mm 53.6788mm] 
+		[34.5887mm 2115.40mil] [34.9400mm 54.5841mm] [34.9623mm 54.6367mm] [34.9994mm 54.7273mm] [35.0152mm 54.7426mm] 
+		[1379.40mil 54.7411mm] [35.1249mm 54.6959mm] [35.1742mm 54.6682mm] [35.2582mm 54.6214mm] [35.2829mm 54.6166mm] 
+		[35.3080mm 54.6240mm] [35.7129mm 54.9026mm] [35.7614mm 54.9341mm] [35.8125mm 54.9702mm] [1410.80mil 54.9747mm] 
+		[35.8551mm 54.9643mm] [35.8993mm 54.9217mm] [36.2341mm 54.5869mm] [36.2753mm 54.5470mm] [36.3179mm 54.5015mm] 
+		[36.3284mm 54.4807mm] [36.3235mm 54.4589mm] [36.2877mm 54.4078mm] [36.2562mm 54.3593mm] [35.9694mm 53.9448mm] 
+		[35.9623mm 53.9209mm] [35.9667mm 53.8952mm] [35.9710mm 53.8843mm] [35.9722mm 53.8813mm] [36.1539mm 53.4309mm] 
+		[36.1539mm 53.4281mm] [36.1610mm 53.4129mm] [1424.20mil 53.3918mm] [36.1970mm 53.3796mm] [36.6997mm 53.2859mm] 
+		[36.7566mm 53.2750mm] [36.8183mm 53.2641mm] [36.8374mm 53.2521mm] [36.8447mm 53.2295mm] [36.8447mm 52.5750mm] 
+		[36.8374mm 52.5539mm] [36.8183mm 52.5419mm] [36.7566mm 52.5310mm] [36.6997mm 52.5201mm] [36.1818mm 52.4233mm] 
+		[36.1589mm 52.4114mm] [36.1429mm 52.3916mm] [36.1335mm 52.3685mm] [35.9601mm 51.9605mm] [1415.30mil 2044.70mil] 
+		[35.9448mm 51.9107mm] [35.9529mm 51.8874mm] [36.2549mm 51.4464mm] [36.2877mm 51.3982mm] [36.3223mm 51.3471mm] 
+		[36.3278mm 51.3245mm] [36.3179mm 2019.80mil] [36.2753mm 51.2587mm] [36.2341mm 51.2188mm] [36.1074mm 51.0924mm] 
+		[36.0672mm 51.0510mm] [35.9392mm 50.9240mm] [35.8551mm 50.8401mm] [1410.80mil 50.8310mm] [35.8125mm 50.8373mm] 
+		[35.7614mm 50.8719mm] [35.7129mm 50.9036mm] [35.2626mm 51.2133mm] [35.2377mm 51.2211mm] [35.2130mm 51.2176mm] 
+		[35.1909mm 51.2079mm] [35.1894mm 51.2079mm] [34.9989mm 51.1170mm] [34.7983mm 51.0482mm] [34.7721mm 51.0370mm] 
+		[34.7510mm 51.0222mm] [34.7391mm 50.9999mm] [34.6398mm 50.4584mm] [34.6286mm 50.4020mm] [34.6161mm 50.3413mm] 
+		[34.6042mm 50.3220mm] [34.5831mm 50.3138mm] [33.9286mm 50.3138mm] 
+	)
 )
 Layer(9 "silk")
 (
