@@ -11,9 +11,9 @@ middle_h = 30;
 middle_id = 53;
 
 // coupling to threaded PVC fitting
-pipe_od = 48.2;
-pipe_taper = 0.7;
-taper_h = 16;
+pipe_od = 48.4;
+pipe_taper = 0.8;
+taper_h = 20;
 
 // sensor board parameters
 sensor_buffer = 10;
