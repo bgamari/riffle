@@ -144,8 +144,15 @@ module cap_with_support() {
 module vertical_print_plate() {
     translate([0, 0, body_height])
     rotate([0, 180, 0])
-    translate([0, 0, taper_h])
-    cap($fn=60);
+    translate([0, 0, taper_h]) {
+        cap($fn=60);
+
+        // support for board recess
+        for (theta = [0, 10, -10, 20, -20])
+        rotate([0, 0, theta])
+        translate([body_od / 2 - 1, 0, middle_h + sensor_buffer])
+        tube(1, 0.3, sensor_board_height);
+    }
 
     // eye
     translate([0, body_od, 0])
