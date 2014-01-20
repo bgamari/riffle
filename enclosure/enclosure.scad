@@ -139,11 +139,11 @@ module cap_with_support() {
 }
 
 module vertical_print_plate() {
+    translate([0, 0, 2*z_res])
     cap_with_support();
 
     // raft
-    translate([0, 0, -0.5])
-    cylinder(r=1.5*body_od/2, h=0.5);
+    cylinder(r=1.5*body_od/2, h=2*z_res);
 
     // eye
     translate([0, body_od, 0])
@@ -160,7 +160,7 @@ module horizontal_print_plate() {
 
     // raft
     translate([l/2, 0, 0])
-    cube([l, body_od, 3*z_res], center=true);
+    cube([l, body_od, 2*z_res], center=true);
 
     // support
     for (s = [+1, -1])
