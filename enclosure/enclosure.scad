@@ -56,7 +56,7 @@ module eye() {
         scale([0.8, 0.9, 1])
         difference() {
             // eye body
-            cylinder(r=body_od/2, h=body_od/4, center=true);
+            cylinder(r=body_od/2, h=body_od/4, center=true, $fn=60);
 
             // eye
             translate([0, pipe_od/4, 0])
@@ -70,9 +70,9 @@ module eye() {
         // fasteners
         for (s = [+1,-1])
         translate([s*eye_fastener_spacing, 0, -delta]) {
-            cylinder(r=m3_diam/2, h=30);
+            cylinder(r=m3_diam/2, h=30, $fn=20);
             translate([0, 0, 5])
-            cylinder(r=m3_head_diam/2, h=30);
+            cylinder(r=m3_head_diam/2, h=30, $fn=20);
         }
     }
 }
@@ -81,13 +81,13 @@ module cap() {
     difference() {
         // body
         translate([0, 0, -taper_h])
-        cylinder(r=body_od/2, h=body_height);
+        cylinder(r=body_od/2, h=body_height, $fn=80);
 
         // eye fastener
         for (s = [+1, -1])
         translate([0, s*eye_fastener_spacing, body_height])
         rotate([180,0,0])
-        cylinder(r=m3_diam/2, h=top_h);
+        cylinder(r=m3_diam/2, h=25, $fn=20);
 
         // taper
         translate([0, 0, -taper_h-delta])
@@ -106,7 +106,7 @@ module cap() {
         translate([0, 0, middle_h+sensor_buffer+z]) {
             rotate_extrude()
             translate([body_od/2, 0])
-            circle(r=0.45);
+            circle(r=0.45, $fn=15);
 
             // EC wire hook
             for (s = [+1, -1])
@@ -114,7 +114,7 @@ module cap() {
             translate([body_od/2, 0, 0])
             rotate_extrude()
             translate([3, 0])
-            circle(r=0.5);
+            circle(r=0.5, $fn=15);
         }
 
         // board recess
