@@ -35,6 +35,19 @@ module tube(r_outer, thickness, h) {
     }
 }
 
+module eye() {
+    rotate([90,0,0])
+    scale([0.8, 0.9, 1])
+    difference() {
+        // eye body
+        cylinder(r=body_od/2, h=body_od/4, center=true);
+
+        // eye
+        translate([0, pipe_od/4, 0])
+        cylinder(r=body_od/6, h=body_od/2, center=true);
+    }
+}
+
 module cap() {
     difference() {
         // body
@@ -44,16 +57,7 @@ module cap() {
 
             // eye
             translate([0, 0, top_h+middle_h+top_thickness-delta])
-            rotate([90,0,0])
-            scale([0.8, 0.9, 1])
-            difference() {
-                // eye body
-                cylinder(r=body_od/2, h=body_od/4, center=true);
-
-                // eye
-                translate([0, pipe_od/4, 0])
-                cylinder(r=body_od/6, h=body_od/2, center=true);
-            }
+            eye();
         }
 
         // taper
