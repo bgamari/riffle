@@ -39,6 +39,9 @@ m3_head_diam = 5.8;
 //delta=0;
 delta = 1e-2;
 
+// derived quantities
+body_height = taper_h + middle_h + top_h + top_thickness;
+
 module tube(r_outer, thickness, h) {
     difference() {
         cylinder(r=r_outer, h=h);
@@ -75,15 +78,14 @@ module eye() {
 }
 
 module cap() {
-    height = taper_h + middle_h + top_h + top_thickness;
     difference() {
         // body
         translate([0, 0, -taper_h])
-        cylinder(r=body_od/2, h=height);
+        cylinder(r=body_od/2, h=body_height);
 
         // eye fastener
         for (s = [+1, -1])
-        translate([0, s*eye_fastener_spacing, height])
+        translate([0, s*eye_fastener_spacing, body_height])
         rotate([180,0,0])
         cylinder(r=m3_diam/2, h=top_h);
 
