@@ -19,7 +19,7 @@ taper_h = 16;
 sensor_buffer = 10;
 sensor_board_depth = 8; // radial dimension
 sensor_board_width = 25;
-sensor_board_height = 18; // axial dimension
+sensor_board_height = 20; // axial dimension
 
 // sensor board-mchck cable passage
 wire_hole_width = 8;
