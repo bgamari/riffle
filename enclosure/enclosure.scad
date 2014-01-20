@@ -35,7 +35,7 @@ eye_fastener_spacing = 15;
 
 // common
 m3_diam = 3.05;
-m3_head_diam = 5.8;
+m3_head_diam = 6.0;
 
 //delta=0;
 delta = 1e-2;
