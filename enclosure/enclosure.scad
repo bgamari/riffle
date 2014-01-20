@@ -1,28 +1,40 @@
+// top (battery region)
 top_thickness = 8;
 top_h = 40;
 top_id = 40;
 top_offset = 5;
 
+// middle (mchck region)
 middle_h = 30;
 middle_id = 53;
 body_od = 56;
 
+// coupling to threaded PVC fitting
 pipe_od = 48.2;
 pipe_taper = 0.7;
 taper_h = 16;
 
+// sensor board parameters
 sensor_buffer = 10;
 sensor_board_depth = 8;
 sensor_board_width = 25;
 sensor_board_height = 18;
 
+// sensor board-mchck cable passage
 wire_hole_width = 8;
 wire_hole_depth = 3;
 wire_sep = 10;
 
-// nozzle diameter
+// printer parameters
 xy_res = 0.32;
 z_res = 0.12;
+
+// eye
+eye_fastener_spacing = 15;
+
+// common
+m3_diam = 3.05;
+m3_head_diam = 5.8;
 
 //delta=0;
 delta = 1e-2;
@@ -36,29 +48,44 @@ module tube(r_outer, thickness, h) {
 }
 
 module eye() {
-    rotate([90,0,0])
-    scale([0.8, 0.9, 1])
     difference() {
-        // eye body
-        cylinder(r=body_od/2, h=body_od/4, center=true);
+        rotate([90,0,0])
+        scale([0.8, 0.9, 1])
+        difference() {
+            // eye body
+            cylinder(r=body_od/2, h=body_od/4, center=true);
 
-        // eye
-        translate([0, pipe_od/4, 0])
-        cylinder(r=body_od/6, h=body_od/2, center=true);
+            // eye
+            translate([0, pipe_od/4, 0])
+            cylinder(r=body_od/6, h=body_od/2, center=true);
+        }
+
+        // subtract bottom half
+        mirror([0, 0, -1])
+        cylinder(r=body_od, h=body_od/2);
+
+        // fasteners
+        for (s = [+1,-1])
+        translate([s*eye_fastener_spacing, 0, -delta]) {
+            cylinder(r=m3_diam/2, h=30);
+            translate([0, 0, 5])
+            cylinder(r=m3_head_diam/2, h=30);
+        }
     }
 }
 
 module cap() {
+    height = taper_h + middle_h + top_h + top_thickness;
     difference() {
         // body
-        union() {
-            translate([0, 0, -taper_h])
-            cylinder(r=body_od/2, h=top_h+middle_h+taper_h+top_thickness);
+        translate([0, 0, -taper_h])
+        cylinder(r=body_od/2, h=height);
 
-            // eye
-            translate([0, 0, top_h+middle_h+top_thickness-delta])
-            eye();
-        }
+        // eye fastener
+        for (s = [+1, -1])
+        translate([0, s*eye_fastener_spacing, height])
+        rotate([180,0,0])
+        cylinder(r=m3_diam/2, h=top_h);
 
         // taper
         translate([0, 0, -taper_h-delta])
@@ -115,7 +142,12 @@ module vertical_print_plate() {
     cap_with_support();
 
     // raft
+    translate([0, 0, -0.5])
     cylinder(r=1.5*body_od/2, h=0.5);
+
+    // eye
+    translate([0, body_od, 0])
+    eye();
 }
 
 module horizontal_print_plate() {
@@ -137,6 +169,7 @@ module horizontal_print_plate() {
     #cube([l, 2*xy_res, (1-cos(theta))*body_od/2]);
 }
 
-horizontal_print_plate();
+vertical_print_plate();
+//horizontal_print_plate();
 
 //projection(cut=true) rotate([90,0,0]) cap_with_support();
