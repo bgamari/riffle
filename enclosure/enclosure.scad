@@ -1,3 +1,5 @@
+body_od = 54;
+
 // top (battery region)
 top_thickness = 8;
 top_h = 40;
@@ -7,7 +9,6 @@ top_offset = 5;
 // middle (mchck region)
 middle_h = 30;
 middle_id = 53;
-body_od = 56;
 
 // coupling to threaded PVC fitting
 pipe_od = 48.2;
