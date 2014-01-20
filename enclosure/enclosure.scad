@@ -17,9 +17,9 @@ taper_h = 16;
 
 // sensor board parameters
 sensor_buffer = 10;
-sensor_board_depth = 8;
+sensor_board_depth = 8; // radial dimension
 sensor_board_width = 25;
-sensor_board_height = 18;
+sensor_board_height = 18; // axial dimension
 
 // sensor board-mchck cable passage
 wire_hole_width = 8;
@@ -103,8 +103,9 @@ module cap() {
         cylinder(r=top_id/2, h=top_h + delta);
 
         // EC wire recess
-        for (z = [0, wire_sep])
-        translate([0, 0, middle_h+sensor_buffer+z]) {
+        for (z = [+1/2, -1/2])
+        translate([0, 0, middle_h+sensor_buffer+sensor_board_height/2])
+        translate([0, 0, wire_sep*z]) {
             rotate_extrude()
             translate([body_od/2, 0])
             circle(r=0.45, $fn=15);
