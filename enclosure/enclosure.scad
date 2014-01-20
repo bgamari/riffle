@@ -141,11 +141,10 @@ module cap_with_support() {
 }
 
 module vertical_print_plate() {
-    translate([0, 0, 2*z_res])
-    cap_with_support();
-
-    // raft
-    cylinder(r=1.5*body_od/2, h=2*z_res);
+    translate([0, 0, body_height])
+    rotate([0, 180, 0])
+    translate([0, 0, taper_h])
+    cap($fn=60);
 
     // eye
     translate([0, body_od, 0])
