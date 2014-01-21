@@ -1,3 +1,8 @@
+// units
+inch = 25.4;
+mil = 1e-3 * inch;
+
+// common dimensions
 body_od = 54;
 
 // top (battery region)
@@ -20,6 +25,9 @@ sensor_buffer = 10;
 sensor_board_depth = 8; // radial dimension
 sensor_board_width = 25;
 sensor_board_height = 20; // axial dimension
+
+// EC electrode wire
+ec_wire_diam = 35*mil;
 
 // sensor board-mchck cable passage
 wire_hole_width = 8;
@@ -108,7 +116,7 @@ module cap() {
         translate([0, 0, wire_sep*z]) {
             rotate_extrude()
             translate([body_od/2, 0])
-            circle(r=0.45, $fn=15);
+            circle(r=ec_wire_diam/2, $fn=15);
 
             // EC wire hook
             for (s = [+1, -1])
@@ -116,7 +124,7 @@ module cap() {
             translate([body_od/2, 0, 0])
             rotate_extrude()
             translate([3, 0])
-            circle(r=0.5, $fn=15);
+            circle(r=ec_wire_diam/2, $fn=15);
         }
 
         // board recess
