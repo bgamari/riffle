@@ -8,7 +8,7 @@ top_offset = 5;
 
 // middle (mchck region)
 middle_h = 30;
-middle_id = 53;
+middle_id = 50;
 
 // coupling to threaded PVC fitting
 pipe_od = 48.4;
