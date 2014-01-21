@@ -1,0 +1,72 @@
+v 20121203 2
+P 0 1700 400 1700 1 0 0
+{
+T 100 1750 5 10 0 0 0 0 1
+pintype=unknown
+T 455 1695 5 10 1 1 0 0 1
+pinlabel=OUT
+T 305 1745 5 10 0 1 0 6 1
+pinnumber=0
+T 100 1750 5 10 0 0 0 0 1
+pinseq=0
+}
+B 400 0 2400 2800 3 0 1 0 -1 -1 0 -1 -1 -1 -1 -1
+T 2100 1300 9 12 1 0 0 4 1
+Turbidity
+T 1200 2900 8 10 0 1 0 0 1
+source=turbidity.sch
+P 0 2500 400 2500 1 0 0
+{
+T 100 2550 5 10 0 0 0 0 1
+pintype=unknown
+T 455 2495 5 10 1 1 0 0 1
+pinlabel=VIN
+T 305 2545 5 10 0 1 0 6 1
+pinnumber=0
+T 100 2550 5 10 0 0 0 0 1
+pinseq=0
+}
+P 0 2100 400 2100 1 0 0
+{
+T 100 2150 5 10 0 0 0 0 1
+pintype=unknown
+T 455 2095 5 10 1 1 0 0 1
+pinlabel=ENABLE
+T 305 2145 5 10 0 1 0 6 1
+pinnumber=0
+T 100 2150 5 10 0 0 0 0 1
+pinseq=0
+}
+P 0 300 400 300 1 0 0
+{
+T 100 350 5 10 0 0 0 0 1
+pintype=unknown
+T 455 295 5 10 1 1 0 0 1
+pinlabel=GND
+T 305 345 5 10 0 1 0 6 1
+pinnumber=0
+T 100 350 5 10 0 0 0 0 1
+pinseq=0
+}
+P 0 1300 400 1300 1 0 0
+{
+T 100 1350 5 10 0 0 0 0 1
+pintype=unknown
+T 455 1295 5 10 1 1 0 0 1
+pinlabel=LED1
+T 305 1345 5 10 0 1 0 6 1
+pinnumber=0
+T 100 1350 5 10 0 0 0 0 1
+pinseq=0
+}
+P 0 900 400 900 1 0 0
+{
+T 100 950 5 10 0 0 0 0 1
+pintype=unknown
+T 455 895 5 10 1 1 0 0 1
+pinlabel=LED2
+T 305 945 5 10 0 1 0 6 1
+pinnumber=0
+T 100 950 5 10 0 0 0 0 1
+pinseq=0
+}

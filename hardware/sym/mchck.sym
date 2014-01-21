@@ -1,0 +1,436 @@
+v 20121203 2
+P 0 6300 300 6300 1 0 0
+{
+T 200 6350 5 8 0 1 0 6 1
+pinnumber=PU1
+T 200 6250 5 8 0 1 0 8 1
+pinseq=1
+T 350 6300 9 8 1 1 0 0 1
+pinlabel=PU1
+T 350 6300 5 8 0 1 0 2 1
+pintype=io
+}
+P 0 6000 300 6000 1 0 0
+{
+T 200 6050 5 8 0 1 0 6 1
+pinnumber=PU2
+T 200 5950 5 8 0 1 0 8 1
+pinseq=2
+T 350 6000 9 8 1 1 0 0 1
+pinlabel=PU2
+T 350 6000 5 8 0 1 0 2 1
+pintype=io
+}
+P 0 5700 300 5700 1 0 0
+{
+T 200 5750 5 8 0 1 0 6 1
+pinnumber=PU3
+T 200 5650 5 8 0 1 0 8 1
+pinseq=3
+T 350 5700 9 8 1 1 0 0 1
+pinlabel=PU3
+T 350 5700 5 8 0 1 0 2 1
+pintype=io
+}
+P 0 5400 300 5400 1 0 0
+{
+T 200 5450 5 8 0 1 0 6 1
+pinnumber=PU4
+T 200 5350 5 8 0 1 0 8 1
+pinseq=4
+T 350 5400 9 8 1 1 0 0 1
+pinlabel=PU4
+T 350 5400 5 8 0 1 0 2 1
+pintype=io
+}
+P 0 5100 300 5100 1 0 0
+{
+T 200 5150 5 8 0 1 0 6 1
+pinnumber=PU5
+T 200 5050 5 8 0 1 0 8 1
+pinseq=5
+T 350 5100 9 8 1 1 0 0 1
+pinlabel=PU5
+T 350 5100 5 8 0 1 0 2 1
+pintype=io
+}
+P 0 4800 300 4800 1 0 0
+{
+T 200 4850 5 8 0 1 0 6 1
+pinnumber=PU6
+T 200 4750 5 8 0 1 0 8 1
+pinseq=6
+T 350 4800 9 8 1 1 0 0 1
+pinlabel=PU6
+T 350 4800 5 8 0 1 0 2 1
+pintype=io
+}
+P 0 4500 300 4500 1 0 0
+{
+T 200 4550 5 8 0 1 0 6 1
+pinnumber=PU7
+T 200 4450 5 8 0 1 0 8 1
+pinseq=7
+T 350 4500 9 8 1 1 0 0 1
+pinlabel=PU7
+T 350 4500 5 8 0 1 0 2 1
+pintype=io
+}
+P 0 4200 300 4200 1 0 0
+{
+T 200 4250 5 8 0 1 0 6 1
+pinnumber=PU8
+T 200 4150 5 8 0 1 0 8 1
+pinseq=8
+T 350 4200 9 8 1 1 0 0 1
+pinlabel=PU8
+T 350 4200 5 8 0 1 0 2 1
+pintype=io
+}
+P 0 3900 300 3900 1 0 0
+{
+T 200 3950 5 8 0 1 0 6 1
+pinnumber=PU9
+T 200 3850 5 8 0 1 0 8 1
+pinseq=9
+T 350 3900 9 8 1 1 0 0 1
+pinlabel=PU9
+T 350 3900 5 8 0 1 0 2 1
+pintype=io
+}
+P 0 3600 300 3600 1 0 0
+{
+T 200 3650 5 8 0 1 0 6 1
+pinnumber=PU10
+T 200 3550 5 8 0 1 0 8 1
+pinseq=10
+T 350 3600 9 8 1 1 0 0 1
+pinlabel=PU10
+T 350 3600 5 8 0 1 0 2 1
+pintype=io
+}
+P 0 3300 300 3300 1 0 0
+{
+T 200 3350 5 8 0 1 0 6 1
+pinnumber=PU11
+T 200 3250 5 8 0 1 0 8 1
+pinseq=11
+T 350 3300 9 8 1 1 0 0 1
+pinlabel=PU11
+T 350 3300 5 8 0 1 0 2 1
+pintype=io
+}
+P 0 3000 300 3000 1 0 0
+{
+T 200 3050 5 8 0 1 0 6 1
+pinnumber=PU12
+T 200 2950 5 8 0 1 0 8 1
+pinseq=12
+T 350 3000 9 8 1 1 0 0 1
+pinlabel=VSS
+T 350 3000 5 8 0 1 0 2 1
+pintype=pwr
+}
+P 0 2700 300 2700 1 0 0
+{
+T 200 2750 5 8 0 1 0 6 1
+pinnumber=PU13
+T 200 2650 5 8 0 1 0 8 1
+pinseq=13
+T 350 2700 9 8 1 1 0 0 1
+pinlabel=PU13
+T 350 2700 5 8 0 1 0 2 1
+pintype=io
+}
+P 0 2400 300 2400 1 0 0
+{
+T 200 2450 5 8 0 1 0 6 1
+pinnumber=PU14
+T 200 2350 5 8 0 1 0 8 1
+pinseq=14
+T 350 2400 9 8 1 1 0 0 1
+pinlabel=PU14
+T 350 2400 5 8 0 1 0 2 1
+pintype=io
+}
+P 0 1800 300 1800 1 0 0
+{
+T 200 1850 5 8 0 1 0 6 1
+pinnumber=PR1
+T 200 1750 5 8 0 1 0 8 1
+pinseq=15
+T 350 1800 9 8 1 1 0 0 1
+pinlabel=PR1
+T 350 1800 5 8 0 1 0 2 1
+pintype=io
+}
+P 0 1500 300 1500 1 0 0
+{
+T 200 1550 5 8 0 1 0 6 1
+pinnumber=PR2
+T 200 1450 5 8 0 1 0 8 1
+pinseq=16
+T 350 1500 9 8 1 1 0 0 1
+pinlabel=PR2
+T 350 1500 5 8 0 1 0 2 1
+pintype=io
+}
+P 0 1200 300 1200 1 0 0
+{
+T 200 1250 5 8 0 1 0 6 1
+pinnumber=PR3
+T 200 1150 5 8 0 1 0 8 1
+pinseq=17
+T 350 1200 9 8 1 1 0 0 1
+pinlabel=PR3
+T 350 1200 5 8 0 1 0 2 1
+pintype=io
+}
+P 0 900 300 900 1 0 0
+{
+T 200 950 5 8 0 1 0 6 1
+pinnumber=PR4
+T 200 850 5 8 0 1 0 8 1
+pinseq=18
+T 350 900 9 8 1 1 0 0 1
+pinlabel=VDD
+T 350 900 5 8 0 1 0 2 1
+pintype=io
+}
+P 0 600 300 600 1 0 0
+{
+T 200 650 5 8 0 1 0 6 1
+pinnumber=PR5
+T 200 550 5 8 0 1 0 8 1
+pinseq=19
+T 350 600 9 8 1 1 0 0 1
+pinlabel=PR5
+T 350 600 5 8 0 1 0 2 1
+pintype=io
+}
+P 0 300 300 300 1 0 0
+{
+T 200 350 5 8 0 1 0 6 1
+pinnumber=PR6
+T 200 250 5 8 0 1 0 8 1
+pinseq=20
+T 350 300 9 8 1 1 0 0 1
+pinlabel=PR6
+T 350 300 5 8 0 1 0 2 1
+pintype=io
+}
+P 2200 6300 1900 6300 1 0 0
+{
+T 2000 6350 5 8 0 1 0 0 1
+pinnumber=PL1
+T 2000 6250 5 8 0 1 0 2 1
+pinseq=21
+T 1850 6300 9 8 1 1 0 6 1
+pinlabel=PL1
+T 1850 6300 5 8 0 1 0 8 1
+pintype=io
+}
+P 2200 6000 1900 6000 1 0 0
+{
+T 2000 6050 5 8 0 1 0 0 1
+pinnumber=PL2
+T 2000 5950 5 8 0 1 0 2 1
+pinseq=22
+T 1850 6000 9 8 1 1 0 6 1
+pinlabel=PL2
+T 1850 6000 5 8 0 1 0 8 1
+pintype=io
+}
+P 2200 5700 1900 5700 1 0 0
+{
+T 2000 5750 5 8 0 1 0 0 1
+pinnumber=PL3
+T 2000 5650 5 8 0 1 0 2 1
+pinseq=23
+T 1850 5700 9 8 1 1 0 6 1
+pinlabel=PL3
+T 1850 5700 5 8 0 1 0 8 1
+pintype=io
+}
+P 2200 5400 1900 5400 1 0 0
+{
+T 2000 5450 5 8 0 1 0 0 1
+pinnumber=PL4
+T 2000 5350 5 8 0 1 0 2 1
+pinseq=24
+T 1850 5400 9 8 1 1 0 6 1
+pinlabel=PL4
+T 1850 5400 5 8 0 1 0 8 1
+pintype=io
+}
+P 2200 5100 1900 5100 1 0 0
+{
+T 2000 5150 5 8 0 1 0 0 1
+pinnumber=PL5
+T 2000 5050 5 8 0 1 0 2 1
+pinseq=25
+T 1850 5100 9 8 1 1 0 6 1
+pinlabel=PL5
+T 1850 5100 5 8 0 1 0 8 1
+pintype=io
+}
+P 2200 4800 1900 4800 1 0 0
+{
+T 2000 4850 5 8 0 1 0 0 1
+pinnumber=PL6
+T 2000 4750 5 8 0 1 0 2 1
+pinseq=26
+T 1850 4800 9 8 1 1 0 6 1
+pinlabel=PL6
+T 1850 4800 5 8 0 1 0 8 1
+pintype=io
+}
+P 2200 4500 1900 4500 1 0 0
+{
+T 2000 4550 5 8 0 1 0 0 1
+pinnumber=PL7
+T 2000 4450 5 8 0 1 0 2 1
+pinseq=27
+T 1850 4500 9 8 1 1 0 6 1
+pinlabel=PL7
+T 1850 4500 5 8 0 1 0 8 1
+pintype=io
+}
+P 2200 4200 1900 4200 1 0 0
+{
+T 2000 4250 5 8 0 1 0 0 1
+pinnumber=PL8
+T 2000 4150 5 8 0 1 0 2 1
+pinseq=28
+T 1850 4200 9 8 1 1 0 6 1
+pinlabel=PL8
+T 1850 4200 5 8 0 1 0 8 1
+pintype=io
+}
+P 2200 3900 1900 3900 1 0 0
+{
+T 2000 3950 5 8 0 1 0 0 1
+pinnumber=PL9
+T 2000 3850 5 8 0 1 0 2 1
+pinseq=29
+T 1850 3900 9 8 1 1 0 6 1
+pinlabel=PL9
+T 1850 3900 5 8 0 1 0 8 1
+pintype=io
+}
+P 2200 3600 1900 3600 1 0 0
+{
+T 2000 3650 5 8 0 1 0 0 1
+pinnumber=PL10
+T 2000 3550 5 8 0 1 0 2 1
+pinseq=30
+T 1850 3600 9 8 1 1 0 6 1
+pinlabel=PL10
+T 1850 3600 5 8 0 1 0 8 1
+pintype=io
+}
+P 2200 3300 1900 3300 1 0 0
+{
+T 2000 3350 5 8 0 1 0 0 1
+pinnumber=PL11
+T 2000 3250 5 8 0 1 0 2 1
+pinseq=31
+T 1850 3300 9 8 1 1 0 6 1
+pinlabel=PL11
+T 1850 3300 5 8 0 1 0 8 1
+pintype=io
+}
+P 2200 3000 1900 3000 1 0 0
+{
+T 2000 3050 5 8 0 1 0 0 1
+pinnumber=PL12
+T 2000 2950 5 8 0 1 0 2 1
+pinseq=32
+T 1850 3000 9 8 1 1 0 6 1
+pinlabel=PL12
+T 1850 3000 5 8 0 1 0 8 1
+pintype=io
+}
+P 2200 2700 1900 2700 1 0 0
+{
+T 2000 2750 5 8 0 1 0 0 1
+pinnumber=PL13
+T 2000 2650 5 8 0 1 0 2 1
+pinseq=33
+T 1850 2700 9 8 1 1 0 6 1
+pinlabel=VSS
+T 1850 2700 5 8 0 1 0 8 1
+pintype=pwr
+}
+P 2200 2400 1900 2400 1 0 0
+{
+T 2000 2450 5 8 0 1 0 0 1
+pinnumber=PL14
+T 2000 2350 5 8 0 1 0 2 1
+pinseq=34
+T 1850 2400 9 8 1 1 0 6 1
+pinlabel=VDD
+T 1850 2400 5 8 0 1 0 8 1
+pintype=pwr
+}
+P 2200 1800 1900 1800 1 0 0
+{
+T 2000 1850 5 8 0 1 0 0 1
+pinnumber=PD1
+T 2000 1750 5 8 0 1 0 2 1
+pinseq=35
+T 1850 1800 9 8 1 1 0 6 1
+pinlabel=SWD_CLK
+T 1850 1800 5 8 0 1 0 8 1
+pintype=io
+}
+P 2200 1500 1900 1500 1 0 0
+{
+T 2000 1550 5 8 0 1 0 0 1
+pinnumber=PD2
+T 2000 1450 5 8 0 1 0 2 1
+pinseq=36
+T 1850 1500 9 8 1 1 0 6 1
+pinlabel=SWD_DIO
+T 1850 1500 5 8 0 1 0 8 1
+pintype=io
+}
+P 2200 1200 1900 1200 1 0 0
+{
+T 2000 1250 5 8 0 1 0 0 1
+pinnumber=PD3
+T 2000 1150 5 8 0 1 0 2 1
+pinseq=37
+T 1850 1200 9 8 1 1 0 6 1
+pinlabel=VSS
+T 1850 1200 5 8 0 1 0 8 1
+pintype=pwr
+}
+P 2200 900 1900 900 1 0 0
+{
+T 2000 950 5 8 0 1 0 0 1
+pinnumber=PD4
+T 2000 850 5 8 0 1 0 2 1
+pinseq=38
+T 1850 900 9 8 1 1 0 6 1
+pinlabel=VRAW
+T 1850 900 5 8 0 1 0 8 1
+pintype=pwr
+}
+B 300 0 1600 6600 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 1900 6700 8 10 1 1 0 6 1
+refdes=J?
+T 300 6700 9 10 1 0 0 0 1
+MC HCK
+T 300 6900 5 10 0 0 0 0 1
+device=MC HCK
+T 300 7100 5 10 0 0 0 0 1
+footprint=SOT23
+T 300 7300 5 10 0 0 0 0 1
+author=Ben Gamari <bgamari@gmail.com>
+T 300 7500 5 10 0 0 0 0 1
+documentation=http://www.mchck.org/
+T 300 7700 5 10 0 0 0 0 1
+description=Linear regulator
+T 300 7900 5 10 0 0 0 0 1
+numslots=0

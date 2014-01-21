@@ -1,0 +1,40 @@
+v 20121203 2
+B 400 0 2600 2700 3 0 1 0 -1 -1 0 -1 -1 -1 -1 -1
+P 0 1200 400 1200 1 0 0
+{
+T 100 1250 5 10 0 0 0 0 1
+pintype=unknown
+T 455 1195 5 10 1 1 0 0 1
+pinlabel=VOUT
+T 305 1245 5 10 1 1 0 6 1
+pinnumber=0
+T 100 1250 5 10 0 0 0 0 1
+pinseq=0
+}
+P 0 700 400 700 1 0 0
+{
+T 100 750 5 10 0 0 0 0 1
+pintype=unknown
+T 455 695 5 10 1 1 0 0 1
+pinlabel=ENABLE
+T 305 745 5 10 1 1 0 6 1
+pinnumber=0
+T 100 750 5 10 0 0 0 0 1
+pinseq=0
+}
+P 0 2100 400 2100 1 0 0
+{
+T 100 2150 5 10 0 0 0 0 1
+pintype=unknown
+T 455 2095 5 10 1 1 0 0 1
+pinlabel=VRAW
+T 305 2145 5 10 1 1 0 6 1
+pinnumber=0
+T 100 2150 5 10 0 0 0 0 1
+pinseq=0
+}
+T 1600 1300 9 12 1 0 0 0 2
+Pressure
+sensor
+T -1200 1100 8 10 0 1 0 0 1
+source=pressure.sch
