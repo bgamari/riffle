@@ -29,11 +29,19 @@ eye_diam = 10;
 
 delta = 0.01;
 
+module tube(r_outer, thickness, h) {
+    difference() {
+        cylinder(r=r_outer, h=h);
+        translate([0, 0, -1])
+        cylinder(r=r_outer-thickness, h=h+2);
+    }
+}
+
 module cap() {
     difference() {
         // body
         union() {
-            cylinder(r=body_od/2, h=body_height, $fn=80);
+            cylinder(r=body_od/2, h=body_height, $fn=160);
 
             translate([0, 0, body_height + square_height/2 - delta])
             cube([square_width, square_width, square_height], center=true);
@@ -84,4 +92,19 @@ module cap() {
    }
 }
 
-cap();
+module cap_with_support() {
+    cap($fn=40);
+
+    // support for board recess
+    translate([0, 0, square_height+sensor_buffer])
+    for (theta = [0, 10, -10, 20, -20])
+    rotate([0, 0, theta])
+    translate([body_od / 2 - 1, 0, middle_h + sensor_buffer])
+    tube(1, 0.3, sensor_board_height);
+
+    // eye
+    translate([0, body_od, 0])
+    eye();
+}
+
+cap_with_support();
