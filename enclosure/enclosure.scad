@@ -99,12 +99,14 @@ module cap_with_support() {
     translate([0, 0, square_height+sensor_buffer])
     for (theta = [0, 10, -10, 20, -20])
     rotate([0, 0, theta])
-    translate([body_od / 2 - 1, 0, middle_h + sensor_buffer])
+    translate([body_od / 2 - 1, 0, sensor_buffer])
     tube(1, 0.3, sensor_board_height);
 
-    // eye
-    translate([0, body_od, 0])
-    eye();
+    // support for square
+    for (x = [-1:1])
+    for (y = [-1:1])
+    translate([square_width / 4 * x, square_width / 4 * y, 0])
+    tube(1, 0.3, square_height);
 }
 
 cap_with_support();
