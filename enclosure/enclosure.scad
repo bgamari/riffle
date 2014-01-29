@@ -4,190 +4,84 @@ mil = 1e-3 * inch;
 
 // common dimensions
 body_od = 54;
+body_height = 50;
 
-// top (battery region)
-top_thickness = 8;
-top_h = 40;
-top_id = 40;
-top_offset = 5;
-
-// middle (mchck region)
-middle_h = 30;
-middle_id = 50;
-
-// coupling to threaded PVC fitting
-pipe_od = 48.4;
-pipe_taper = 0.8;
-taper_h = 20;
+// square
+square_width = 25.4;
+square_height = 20.0;
 
 // sensor board parameters
-sensor_buffer = 10;
+sensor_buffer = 0;
 sensor_board_depth = 8; // radial dimension
 sensor_board_width = 25;
 sensor_board_height = 20; // axial dimension
 
 // EC electrode wire
-ec_wire_diam = 35*mil;
+ec_wire_diam = 38*mil;
+ec_wire_sep = 10;
 
-// sensor board-mchck cable passage
-wire_hole_width = 8;
-wire_hole_depth = 3;
-wire_sep = 10;
-
-// printer parameters
-xy_res = 0.32;
-z_res = 0.12;
+// cable passage
+passage_width = 5;
+passage_height = 3;
 
 // eye
-eye_fastener_spacing = 15;
+eye_diam = 10;
 
-// common
-m3_diam = 3.05;
-m3_head_diam = 6.0;
-
-//delta=0;
-delta = 1e-2;
-
-// derived quantities
-body_height = taper_h + middle_h + top_h + top_thickness;
-
-module tube(r_outer, thickness, h) {
-    difference() {
-        cylinder(r=r_outer, h=h);
-        translate([0, 0, -1])
-        cylinder(r=r_outer-thickness, h=h+2);
-    }
-}
-
-module eye() {
-    difference() {
-        rotate([90,0,0])
-        scale([0.8, 0.9, 1])
-        difference() {
-            // eye body
-            cylinder(r=body_od/2, h=body_od/4, center=true, $fn=60);
-
-            // eye
-            translate([0, pipe_od/4, 0])
-            cylinder(r=body_od/6, h=body_od/2, center=true);
-        }
-
-        // subtract bottom half
-        mirror([0, 0, -1])
-        cylinder(r=body_od, h=body_od/2);
-
-        // fasteners
-        for (s = [+1,-1])
-        translate([s*eye_fastener_spacing, 0, -delta]) {
-            cylinder(r=m3_diam/2, h=30, $fn=20);
-            translate([0, 0, 5])
-            cylinder(r=m3_head_diam/2, h=30, $fn=20);
-        }
-    }
-}
+delta = 0.01;
 
 module cap() {
     difference() {
         // body
-        translate([0, 0, -taper_h])
-        cylinder(r=body_od/2, h=body_height, $fn=80);
+        union() {
+            cylinder(r=body_od/2, h=body_height, $fn=80);
 
-        // eye fastener
-        for (s = [+1, -1])
-        translate([0, s*eye_fastener_spacing, body_height])
-        rotate([180,0,0])
-        cylinder(r=m3_diam/2, h=25, $fn=20);
+            translate([0, 0, body_height + square_height/2 - delta])
+            cube([square_width, square_width, square_height], center=true);
+        }
 
-        // taper
-        translate([0, 0, -taper_h-delta])
-        cylinder(r1=(pipe_od+pipe_taper)/2, r2=(pipe_od-pipe_taper)/2,
-                 h=taper_h + 2*delta);
-        
-        // middle cavity
-        cylinder(r=middle_id/2, h=middle_h + delta);
-
-        // top cavity
-        translate([-top_offset, 0, middle_h])
-        cylinder(r=top_id/2, h=top_h + delta);
+        // board recess
+        translate([body_od/2 - sensor_board_depth, 0, square_height+sensor_buffer])
+        translate([0, -sensor_board_width/2, 0])
+        cube([sensor_board_depth, sensor_board_width, sensor_board_height]);
 
         // EC wire recess
         for (z = [+1/2, -1/2])
-        translate([0, 0, middle_h+sensor_buffer+sensor_board_height/2])
-        translate([0, 0, wire_sep*z]) {
+        translate([0, 0, square_height+sensor_buffer+sensor_board_height/2])
+        translate([0, 0, ec_wire_sep*z]) {
             rotate_extrude()
             translate([body_od/2, 0])
             circle(r=ec_wire_diam/2, $fn=15);
 
             // EC wire hook
-            for (s = [+1, -1])
-            rotate([0, 0, 28*s])
-            translate([body_od/2, 0, 0])
-            rotate_extrude()
-            translate([3, 0])
-            circle(r=ec_wire_diam/2, $fn=15);
+            translate([body_od/2 - 6, 0, 0])
+            rotate([90, 0, 0])
+            cylinder(r=ec_wire_diam/2, h=body_od, $fn=15, center=true);
         }
 
-        // board recess
-        translate([body_od/2 - sensor_board_depth, 0, middle_h+sensor_buffer])
-        translate([0, -sensor_board_width/2, 0])
-        cube([sensor_board_depth, sensor_board_width, sensor_board_height]);
+        // Recess for wrench square
+        cube([square_width, square_width, 2*square_height], center=true);
 
-        // wire hole
-        translate([body_od/2 - sensor_board_depth, 0, middle_h])
-        translate([0, -wire_hole_width/2, 0])
-        cube([wire_hole_depth, wire_hole_width, 2*sensor_buffer]);
-    }
+        // Cable passage
+        translate([delta, 0, -delta])
+        translate([body_od/2 - sensor_board_depth, 0, square_height])
+        rotate([90, -90, 0])
+        intersection() {
+            rotate_extrude()
+            translate([body_od/2 - sensor_board_depth, 0, 0])
+            scale([passage_height / passage_width, 1])
+            circle(r=passage_width);
+
+            translate([0, 0, -passage_width])
+            cube([body_od, body_od, 2*passage_width]);
+        }
+
+        // Eye
+        translate([0, 0, body_height + square_height/2 + 0.6*square_width])
+        rotate([90, 0, 0])
+        rotate_extrude()
+        translate([0.6*square_width, 0, 0])
+        circle(r=eye_diam/2);
+   }
 }
 
-module cap_with_support() {
-    translate([0, 0, taper_h])
-    cap($fn=60);
-
-    // support
-    translate([-top_offset, 0, 0]) {
-        tube(top_id/2+xy_res, 0.3, taper_h+middle_h);
-        tube(top_id/4, xy_res, taper_h+middle_h+top_h);
-    }
-}
-
-module vertical_print_plate() {
-    translate([0, 0, body_height])
-    rotate([0, 180, 0])
-    translate([0, 0, taper_h]) {
-        cap($fn=60);
-
-        // support for board recess
-        for (theta = [0, 10, -10, 20, -20])
-        rotate([0, 0, theta])
-        translate([body_od / 2 - 1, 0, middle_h + sensor_buffer])
-        tube(1, 0.3, sensor_board_height);
-    }
-
-    // eye
-    translate([0, body_od, 0])
-    eye();
-}
-
-module horizontal_print_plate() {
-    l = 120;
-
-    translate([taper_h, 0, body_od/2])
-    rotate([180,0,0])
-    rotate([0,90,0])
-    cap();
-
-    // raft
-    translate([l/2, 0, 0])
-    cube([l, body_od, 2*z_res], center=true);
-
-    // support
-    for (s = [+1, -1])
-    for (theta = [25, 35, 50])
-    translate([0, s*body_od/2*sin(theta) - xy_res, 0])
-    #cube([l, 2*xy_res, (1-cos(theta))*body_od/2]);
-}
-
-vertical_print_plate();
-//horizontal_print_plate();
-
-//projection(cut=true) rotate([90,0,0]) cap_with_support();
+cap();
