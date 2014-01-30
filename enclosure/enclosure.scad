@@ -2,6 +2,8 @@
 inch = 25.4;
 mil = 1e-3 * inch;
 
+with_logo = true;
+
 // common dimensions
 body_od = 54;
 body_height = 50;
@@ -39,12 +41,20 @@ module tube(r_outer, thickness, h) {
 
 module cap() {
     difference() {
-        // body
         union() {
+            // body
             cylinder(r=body_od/2, h=body_height, $fn=160);
 
+            // Top square
             translate([0, 0, body_height + square_height/2 - delta])
             cube([square_width, square_width, square_height], center=true);
+
+            // Logo
+            if (with_logo)
+            color("SteelBlue")
+            translate([0, 0, body_height + square_height - 0.1])
+            scale([0.5, 0.5, 0.3])
+            import(file="boots-puddle.stl");
         }
 
         // board recess
