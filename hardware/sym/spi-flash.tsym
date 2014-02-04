@@ -1,0 +1,31 @@
+[options]
+wordswap	yes
+rotate_labels	yes
+sort_labels	no
+generate_pinseq	yes
+sym_width	1200
+pinwidthvertical	300
+pinwidthhorizontal	300
+
+[geda_attr]
+version	20060113 1
+name	SPI FLASH
+device	X25
+refdes	U?
+footprint	SOIC-8
+description	SPI FLASH device
+author	Ben Gamari <bgamari@gmail.com>
+numslots	0
+dist-license
+use-license
+
+[pins]
+#pinnr	seq	type	style	posit.	net	label
+1		in	line	l		\_CS\_
+2		out	line	l		MISO
+3		in	line	l		\_WP\_
+4		pwr	line	l		GND
+8		pwr	line	r		VCC
+7		in	line	r		HOLD
+6		in	line	r		SCLK
+5		in	line	r		MOSI
