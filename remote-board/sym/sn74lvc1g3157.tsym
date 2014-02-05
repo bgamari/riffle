@@ -18,11 +18,11 @@ pinwidthhorizontal	300
 # if you have a device with slots, you'll have to use slot= and slotdef=
 # use comment= if there are special information you want to add
 version	20060113 1
-name	LM19
-device	LM19
+name	SN74LVC1G3157
+device	SN74LVC1G3157
 refdes	U?
-footprint	TO92
-description	Positive low-dropout voltage regulator
+footprint	SOT23-6
+description	Analog switch
 documentation	http://www.ti.com/
 author	Ben Gamari <bgamari@gmail.com>
 numslots	0
@@ -51,6 +51,9 @@ use-license
 #	if you want to write a "\" use "\\" as escape sequence
 #
 #pinnr	seq	type	style	posit.	net	label
-1		pwr	line	t		V+
-2		out	line	l		Vout
-3		pwr	line	b		GND
+1		io	line	r		B2
+2		pwr	line	b		GND
+3		io	line	r		B1
+4		io	line	l		A
+5		pwr	line	t		VCC
+6		in	line	l		S

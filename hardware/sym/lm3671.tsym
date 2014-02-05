@@ -9,10 +9,10 @@ pinwidthhorizontal	300
 
 [geda_attr]
 version	20060113 1
-name	LM2733
-device	LM2733
+name	LM3671
+device	LM3671
 refdes	U?
-footprint	SOT23
+footprint	SOT23-5
 description	Linear regulator
 documentation	http://www.micrel.com/
 author	Ben Gamari <bgamari@gmail.com>
@@ -22,8 +22,8 @@ use-license
 
 [pins]
 #pinnr	seq	type	style	posit.	net	label
-1		pwr	line	r		SW
+1		pwr	line	l		Vin
 2		pwr	line	b		GND
-3		in	line	r		FB
-5		pwr	line	l		Vin
-4		in	line	l		\_SHDN\_
+3		in	line	l		EN
+5		pwr	line	r		FB
+4		pwr	line	r		SW
