@@ -58,6 +58,8 @@ osh-park-gerbers : gerbers
 	cp gerbers/$(name).topsilk.gbr "$@/Top Silk Screen.ger"
 	cp gerbers/$(name).bottomsilk.gbr "$@/Bottom Silk Screen.ger"
 	cp gerbers/$(name).outline.gbr "$@/Board Outline.ger"
+	cp gerbers/$(name).group1.gbr "$@/layer1.g2l"
+	cp gerbers/$(name).group2.gbr "$@/layer2.g3l"
 	cp gerbers/$(name).plated-drill.cnc "$@/Drills.xln"
 
 osh-park-gerbers.zip : osh-park-gerbers
