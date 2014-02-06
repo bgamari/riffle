@@ -18,7 +18,7 @@ pinwidthhorizontal	300
 # if you have a device with slots, you'll have to use slot= and slotdef=
 # use comment= if there are special information you want to add
 version	20060113 1
-name	SN74LVC1G3157
+name	Switch
 device	SN74LVC1G3157
 refdes	U?
 footprint	SOT23-6

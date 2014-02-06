@@ -1,0 +1,50 @@
+[options]
+# wordswap swaps labels if the pin is on the right side an looks like this:
+# "PB1 (CLK)". That's useful for micro controller port labels
+# rotate_labels rotates the pintext of top and bottom pins
+# this is useful for large symbols like FPGAs with more than 100 pins
+# sort_labels will sort the pins by it's labels
+# useful for address ports, busses, ...
+wordswap	yes
+rotate_labels	no
+sort_labels	no
+generate_pinseq	yes
+sym_width	1200
+pinwidthvertical	300
+pinwidthhorizontal	300
+
+[geda_attr]
+# name will be printed in the top of the symbol
+# if you have a device with slots, you'll have to use slot= and slotdef=
+# use comment= if there are special information you want to add
+version	20060113 1
+name	PCA9554
+device	PCA9554
+refdes	U?
+footprint	TSSOP16
+description	8-bit IO expander
+documentation	http://www.nxp.com/
+author	Ben Gamari <bgamari@gmail.com>
+numslots	0
+dist-license
+use-license
+
+[pins]
+#pinnr	seq	type	style	posit.	net	label
+1		in	line	l		A0
+2		in	line	l		A1
+3		in	line	l		A2
+4		io	line	r		IO0
+5		io	line	r		IO1
+6		io	line	r		IO2
+7		io	line	r		IO3
+8		pwr	line	b		VSS
+
+9		io	line	r		IO4
+10		io	line	r		IO5
+11		io	line	r		IO6
+12		io	line	r		IO7
+13		out	line	l		\_INT\_
+14		in	line	l		SCL
+15		io	line	l		SDA
+16		io	line	t		VDD
