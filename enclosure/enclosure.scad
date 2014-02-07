@@ -13,7 +13,7 @@ square_width = 25.4;
 square_height = 20.0;
 
 // sensor board parameters
-sensor_buffer = 0;
+sensor_buffer = 5;
 sensor_board_depth = 8; // radial dimension
 sensor_board_width = 25;
 sensor_board_height = 20; // axial dimension
@@ -58,13 +58,13 @@ module cap() {
         }
 
         // board recess
-        translate([body_od/2 - sensor_board_depth, 0, square_height+sensor_buffer])
+        translate([body_od/2 - sensor_board_depth, 0, sensor_buffer])
         translate([0, -sensor_board_width/2, 0])
         cube([sensor_board_depth, sensor_board_width, sensor_board_height]);
 
         // EC wire recess
         for (z = [+1/2, -1/2])
-        translate([0, 0, square_height+sensor_buffer+sensor_board_height/2])
+        translate([0, 0, sensor_buffer+sensor_board_height/2])
         translate([0, 0, ec_wire_sep*z]) {
             rotate_extrude()
             translate([body_od/2, 0])
@@ -81,7 +81,7 @@ module cap() {
 
         // Cable passage
         translate([delta, 0, -delta])
-        translate([body_od/2 - sensor_board_depth, 0, square_height])
+        translate([body_od/2 - sensor_board_depth, 0, 0])
         rotate([90, -90, 0])
         intersection() {
             rotate_extrude()
