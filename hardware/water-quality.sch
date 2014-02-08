@@ -390,7 +390,7 @@ refdes=RTC
 T 42900 23400 5 10 0 0 0 0 1
 symversion=0.1
 T 42700 22700 5 10 0 0 0 0 1
-footprint=0805
+footprint=rtc-crystal
 }
 N 42900 24500 42900 23200 4
 N 42900 23200 42700 23200 4
