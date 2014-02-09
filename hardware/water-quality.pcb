@@ -5,7 +5,7 @@ FileVersion[20091103]
 
 PCB["riffle" 6000.00mil 5000.00mil]
 
-Grid[1000.000000 0.0000 0.0000 0]
+Grid[2500.000000 0.0000 0.0000 0]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[6.00mil 10.00mil 6.00mil 6.00mil 13.00mil 8.00mil]
@@ -786,7 +786,7 @@ Symbol['~' 12.00mil]
 	SymbolLine[20.00mil 35.00mil 25.00mil 30.00mil 8.00mil]
 )
 Attribute("PCB::grid::unit" "mil")
-Attribute("PCB::grid::size" "10.00mil")
+Attribute("PCB::grid::size" "25.00mil")
 Via[1525.00mil 1625.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
 Via[1640.00mil 1830.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
 Via[1275.00mil 2125.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
@@ -1931,10 +1931,10 @@ Layer(8 "spare")
 )
 Layer(9 "silk")
 (
-	Text[2450.00mil 1770.00mil 0 100 "and Ben Gamari" "clearline,onsolder"]
-	Text[2240.00mil 1640.00mil 0 100 "publiclab.org/wiki/riffle" "clearline,onsolder"]
-	Text[2230.00mil 1830.00mil 0 100 "designed by Laura Dietz" "clearline,onsolder"]
-	Text[2430.00mil 1970.00mil 0 254 "RIFFLE" "clearline,selected,onsolder"]
+	Text[2175.00mil 1480.00mil 1 205 "RIFFLE" "clearline,onsolder"]
+	Text[59.6259mm 35.2205mm 1 77 "Laura Dietz" "clearline,onsolder"]
+	Text[2385.00mil 35.2004mm 1 76 "Ben Gamari" "clearline,onsolder"]
+	Text[58.6506mm 35.1953mm 1 76 "designed by" "clearline,onsolder"]
 )
 Layer(10 "silk")
 (
