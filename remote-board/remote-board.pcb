@@ -856,14 +856,14 @@ Element["" "0603" "C4" "100n" 1875.00mil 11.5720mm -12.09mil 1.1199mm 0 52 ""]
 
 	)
 
-Element["onsolder" "0603" "C3" "100n" 1880.00mil 13.3500mm 19.09mil -5.27mil 0 100 "auto"]
+Element["onsolder" "0603" "C3" "100n" 1880.00mil 13.3500mm -15.91mil -40.27mil 0 54 "auto"]
 (
 	Pad[-4.92mil 25.59mil 4.92mil 25.59mil 29.52mil 20.00mil 35.52mil "1" "1" "onsolder,square"]
 	Pad[-4.92mil -25.59mil 4.92mil -25.59mil 29.52mil 20.00mil 35.52mil "2" "2" "onsolder,square"]
 
 	)
 
-Element["onsolder" "0603" "R1" "3.3k" 1650.00mil 940.00mil -40.91mil -19.09mil 0 100 "auto"]
+Element["onsolder" "0603" "R1" "3.3k" 1650.00mil 940.00mil -40.91mil -19.09mil 0 77 "auto"]
 (
 	Pad[25.59mil -4.92mil 25.59mil 4.92mil 29.52mil 20.00mil 35.52mil "1" "1" "onsolder,square"]
 	Pad[-25.59mil -4.92mil -25.59mil 4.92mil 29.52mil 20.00mil 35.52mil "2" "2" "onsolder,square"]
@@ -938,7 +938,7 @@ Element["" "SOT26" "U5" "unknown" 1722.00mil 932.00mil -80.00mil -124.00mil 0 10
 
 	)
 
-Element["onsolder" "0603" "C8" "0.1u" 1600.00mil 510.00mil -11.50mil 81.50mil 0 100 "auto"]
+Element["onsolder" "0603" "C8" "0.1u" 1600.00mil 510.00mil -86.50mil 41.50mil 0 77 "auto"]
 (
 	Pad[-25.59mil -4.92mil -25.59mil 4.92mil 29.52mil 20.00mil 35.52mil "1" "1" "onsolder,square"]
 	Pad[25.59mil -4.92mil 25.59mil 4.92mil 29.52mil 20.00mil 35.52mil "2" "2" "onsolder,square"]
@@ -976,7 +976,7 @@ Element["" "TCS3472" "U3" "unknown" 1570.00mil 720.00mil -50.00mil -3.7780mm 0 1
 
 	)
 
-Element["onsolder" "SOIC-127P-600L1-8N" "U4" "unknown" 1740.00mil 620.00mil 116.50mil 68.50mil 0 100 "auto"]
+Element["onsolder" "SOIC-127P-600L1-8N" "U4" "unknown" 1740.00mil 620.00mil -158.50mil 108.50mil 0 100 "auto"]
 (
 	Pad[75.00mil 63.00mil 75.00mil 126.00mil 24.00mil 20.00mil 44.00mil "" "1" "onsolder,square,edge2"]
 	Pad[25.00mil 63.00mil 25.00mil 126.00mil 24.00mil 20.00mil 44.00mil "" "2" "onsolder,square,edge2"]
@@ -1024,7 +1024,7 @@ Element["" "0603" "R2" "unknown" 47.7370mm 160.00mil -40.32mil 18.50mil 0 53 ""]
 
 	)
 
-Element["onsolder" "TSSOP16" "U6" "unknown" 1730.00mil 310.00mil -160.00mil 30.00mil 0 100 "auto"]
+Element["onsolder" "TSSOP16" "U6" "unknown" 1730.00mil 310.00mil -165.00mil 50.00mil 0 100 "auto"]
 (
 	Pad[-89.56mil -139.17mil -89.56mil -93.11mil 12.99mil 10.00mil 22.99mil "1" "1" "onsolder,square"]
 	Pad[-63.97mil -139.17mil -63.97mil -93.11mil 12.99mil 10.00mil 22.99mil "2" "2" "onsolder,square"]
@@ -1284,8 +1284,9 @@ Layer(8 "spare")
 )
 Layer(9 "silk")
 (
-	Text[1495.00mil 575.00mil 1 100 "v2" "clearline,onsolder"]
-	Text[1495.00mil 165.00mil 1 100 "Remote board" "clearline,onsolder"]
+	Text[1950.00mil 815.00mil 1 76 "v2" "clearline,onsolder"]
+	Text[1935.00mil 350.00mil 1 100 "Remote board" "clearline,onsolder"]
+	Text[1845.00mil 205.00mil 1 144 "riffle" "clearline,onsolder"]
 )
 Layer(10 "silk")
 (
