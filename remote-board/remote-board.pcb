@@ -898,10 +898,10 @@ Element["" "MS5803" "U2" "unknown" 1740.00mil 575.00mil -175.00mil -2.1270mm 0 1
 
 Element["" "pads10" "CONN" "unknown" 1450.00mil 875.00mil 40.00mil -315.00mil 1 100 ""]
 (
-	Pin[0.0000 -675.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "1" ""]
-	Pin[0.0000 -600.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "2" ""]
-	Pin[0.0000 -525.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "3" "thermal(4X)"]
-	Pin[0.0000 -450.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "4" "thermal(1X)"]
+	Pin[0.0000 -675.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "1" "thermal(4X)"]
+	Pin[0.0000 -600.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "2" "thermal(1X)"]
+	Pin[0.0000 -525.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "3" ""]
+	Pin[0.0000 -450.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "4" ""]
 	Pin[0.0000 -375.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "5" ""]
 	Pin[0.0000 -300.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "6" ""]
 	Pin[0.0000 -225.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "7" ""]
@@ -1164,8 +1164,8 @@ Layer(1 "top")
 	Line[1695.00mil 335.00mil 43.4190mm 320.59mil 10.00mil 20.00mil "clearline"]
 	Line[44.7190mm 320.59mil 46.4370mm 320.59mil 10.00mil 20.00mil "clearline"]
 	Line[46.4370mm 320.59mil 46.6575mm 311.91mil 10.00mil 20.00mil "clearline"]
-	Line[1450.00mil 275.00mil 1510.00mil 275.00mil 10.00mil 20.00mil "clearline"]
-	Line[1510.00mil 275.00mil 1530.00mil 295.00mil 10.00mil 20.00mil "clearline"]
+	Line[1530.00mil 295.00mil 1505.00mil 295.00mil 10.00mil 20.00mil "clearline"]
+	Line[1505.00mil 295.00mil 1450.00mil 350.00mil 10.00mil 20.00mil "clearline"]
 )
 Layer(2 "ground")
 (
@@ -1297,7 +1297,7 @@ NetList()
 		Connect("C1-2")
 		Connect("C3-2")
 		Connect("C4-2")
-		Connect("CONN-3")
+		Connect("CONN-1")
 		Connect("R2-1")
 		Connect("REED_SW-1")
 		Connect("U1-1")
@@ -1327,7 +1327,7 @@ NetList()
 		Connect("C6-2")
 		Connect("C7-2")
 		Connect("C8-1")
-		Connect("CONN-4")
+		Connect("CONN-2")
 		Connect("U1-3")
 		Connect("U2-2")
 		Connect("U2-3")
@@ -1395,7 +1395,7 @@ NetList()
 	)
 	Net("TEMP" "(unknown)")
 	(
-		Connect("CONN-2")
+		Connect("CONN-3")
 		Connect("U1-2")
 	)
 	Net("unnamed_net1" "(unknown)")
