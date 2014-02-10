@@ -1008,7 +1008,7 @@ Element["" "micro-usb" "USB" "unknown" 1275.00mil 42.1350mm 33.86mil 136.14mil 0
 
 	)
 
-Element["" "0603" "R3" "33" 1450.00mil 1550.00mil -69.73mil -55.91mil 0 77 ""]
+Element["" "0603" "R3" "33k" 1450.00mil 1550.00mil -69.73mil -55.91mil 0 77 ""]
 (
 	Pad[-4.92mil -25.59mil 4.92mil -25.59mil 29.52mil 20.00mil 35.52mil "1" "1" "square"]
 	Pad[-4.92mil 25.59mil 4.92mil 25.59mil 29.52mil 20.00mil 35.52mil "2" "2" "square"]
@@ -1066,7 +1066,7 @@ Element["" "0805" "L1" "2.2u" 1600.00mil 1375.00mil 43.50mil 23.50mil 0 77 ""]
 
 	)
 
-Element["" "0603" "R4" "33" 1500.00mil 1550.00mil 20.27mil -62.09mil 0 77 ""]
+Element["" "0603" "R4" "56k" 1500.00mil 1550.00mil 20.27mil -62.09mil 0 77 ""]
 (
 	Pad[-4.92mil 25.59mil 4.92mil 25.59mil 29.52mil 20.00mil 35.52mil "1" "1" "square"]
 	Pad[-4.92mil -25.59mil 4.92mil -25.59mil 29.52mil 20.00mil 35.52mil "2" "2" "square"]
