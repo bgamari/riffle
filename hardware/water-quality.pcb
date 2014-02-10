@@ -9,7 +9,7 @@ Grid[500.000000 0.0000 0.0000 0]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[6.00mil 10.00mil 6.00mil 6.00mil 13.00mil 8.00mil]
-Flags("showdrc,nameonpcb,clearnew,snappin,locknames")
+Flags("showdrc,nameonpcb,clearnew,snappin,onlynames")
 Groups("1,8,c:2,s:3:4:5:6:7")
 Styles["Signal,10.00mil,36.00mil,20.00mil,10.00mil:Power,25.00mil,60.00mil,35.00mil,10.00mil:Fat,0.40mil,0.60mil,0.35mil,0.10mil:Skinny,8.00mil,8.00mil,4.00mil,6.00mil"]
 
@@ -906,7 +906,7 @@ Element["" "0603" "R1" "33" 37.4500mm 1625.00mil 63.50mil -6.50mil 0 77 ""]
 
 	)
 
-Element["" "0603" "C5" "10u" 68.7220mm 33.6700mm 121.50mil 21.50mil 2 77 ""]
+Element["" "0603" "C5" "10u" 68.7220mm 33.6700mm -37.68mil -62.68mil 0 77 ""]
 (
 	Pad[25.59mil -4.92mil 25.59mil 4.92mil 29.52mil 20.00mil 35.52mil "1" "1" "square"]
 	Pad[-25.59mil -4.92mil -25.59mil 4.92mil 29.52mil 20.00mil 35.52mil "2" "2" "square"]
@@ -1164,7 +1164,7 @@ Element["" "SOT23" "Q2" "unknown" 2193.00mil 1836.00mil -106.93mil -18.66mil 0 1
 
 	)
 
-Element["" "CONNECTOR-4-2" "NRF" "unknown" 2650.00mil 1850.00mil -145.00mil -410.00mil 0 100 ""]
+Element["" "CONNECTOR-4-2" "NRF" "unknown" 2650.00mil 1850.00mil -145.00mil -405.00mil 0 100 ""]
 (
 	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "1" "1" "square,thermal(1X)"]
 	Pin[-100.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "2" "2" ""]
@@ -1217,7 +1217,7 @@ Element["" "JUMPER2" "EXT_WKUP" "unknown" 1300.00mil 2025.00mil -105.00mil 75.00
 
 	)
 
-Element["" "0603" "C15" "100n" 2680.00mil 1440.00mil -13.50mil -31.50mil 3 77 ""]
+Element["" "0603" "C15" "100n" 2680.00mil 1440.00mil -16.50mil -81.50mil 0 77 ""]
 (
 	Pad[-4.92mil -25.59mil 4.92mil -25.59mil 29.52mil 20.00mil 35.52mil "1" "1" "square"]
 	Pad[-4.92mil 25.59mil 4.92mil 25.59mil 29.52mil 20.00mil 35.52mil "2" "2" "square"]
@@ -1276,7 +1276,7 @@ Element["" "JUMPER3" "I2C" "unknown" 2125.00mil 2100.00mil -50.00mil 50.00mil 0 
 
 	)
 
-Element["" "HEADER10_1" "REMOTE" "unknown" 2775.00mil 1475.00mil 90.00mil -60.00mil 1 100 ""]
+Element["" "HEADER10_1" "REMOTE" "unknown" 2775.00mil 1475.00mil 100.00mil -55.00mil 1 100 ""]
 (
 	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "1" "1" "square"]
 	Pin[0.0000 100.00mil 60.00mil 30.00mil 66.00mil 38.00mil "2" "2" "thermal(1X)"]
@@ -1297,14 +1297,14 @@ Element["" "HEADER10_1" "REMOTE" "unknown" 2775.00mil 1475.00mil 90.00mil -60.00
 
 	)
 
-Element["" "0603" "D2" "unknown" 1360.00mil 33.3860mm -22.09mil 39.09mil 0 77 ""]
+Element["" "0603" "D2" "unknown" 1360.00mil 33.3860mm -22.09mil 34.09mil 0 77 ""]
 (
 	Pad[-4.92mil -25.59mil 4.92mil -25.59mil 29.52mil 20.00mil 35.52mil "1" "1" "square"]
 	Pad[-4.92mil 25.59mil 4.92mil 25.59mil 29.52mil 20.00mil 35.52mil "2" "2" "square"]
 
 	)
 
-Element["" "0603" "D1" "unknown" 1360.00mil 36.6880mm -20.91mil 39.09mil 0 76 ""]
+Element["" "0603" "D1" "unknown" 1360.00mil 36.6880mm -20.91mil 34.09mil 0 76 ""]
 (
 	Pad[-4.92mil 25.59mil 4.92mil 25.59mil 29.52mil 20.00mil 35.52mil "1" "1" "square"]
 	Pad[-4.92mil -25.59mil 4.92mil -25.59mil 29.52mil 20.00mil 35.52mil "2" "2" "square"]
