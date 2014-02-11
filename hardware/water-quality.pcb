@@ -5,7 +5,7 @@ FileVersion[20091103]
 
 PCB["riffle" 6000.00mil 5000.00mil]
 
-Grid[500.000000 0.0000 0.0000 0]
+Grid[2500.000000 0.0000 0.0000 0]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[6.00mil 10.00mil 6.00mil 6.00mil 13.00mil 8.00mil]
@@ -786,7 +786,7 @@ Symbol['~' 12.00mil]
 	SymbolLine[20.00mil 35.00mil 25.00mil 30.00mil 8.00mil]
 )
 Attribute("PCB::grid::unit" "mil")
-Attribute("PCB::grid::size" "5.00mil")
+Attribute("PCB::grid::size" "25.00mil")
 Via[1525.00mil 1625.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
 Via[1640.00mil 1830.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
 Via[1275.00mil 2125.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
@@ -1262,27 +1262,6 @@ Element["" "JUMPER3" "I2C" "unknown" 2125.00mil 2100.00mil -50.00mil 50.00mil 0 
 
 	)
 
-Element["" "HEADER10_1" "REMOTE" "unknown" 2775.00mil 1475.00mil 100.00mil -55.00mil 1 100 ""]
-(
-	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "1" "1" "square"]
-	Pin[0.0000 100.00mil 60.00mil 30.00mil 66.00mil 38.00mil "2" "2" "thermal(1X)"]
-	Pin[0.0000 200.00mil 60.00mil 30.00mil 66.00mil 38.00mil "3" "3" ""]
-	Pin[0.0000 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "4" "4" ""]
-	Pin[0.0000 400.00mil 60.00mil 30.00mil 66.00mil 38.00mil "5" "5" ""]
-	Pin[100.00mil 400.00mil 60.00mil 30.00mil 66.00mil 38.00mil "6" "6" ""]
-	Pin[100.00mil 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "7" "7" ""]
-	Pin[100.00mil 200.00mil 60.00mil 30.00mil 66.00mil 38.00mil "8" "8" ""]
-	Pin[100.00mil 100.00mil 60.00mil 30.00mil 66.00mil 38.00mil "9" "9" ""]
-	Pin[100.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "10" "10" ""]
-	ElementLine [-50.00mil -50.00mil -50.00mil 450.00mil 10.00mil]
-	ElementLine [-50.00mil 450.00mil 150.00mil 450.00mil 10.00mil]
-	ElementLine [150.00mil 450.00mil 150.00mil -50.00mil 10.00mil]
-	ElementLine [150.00mil -50.00mil -50.00mil -50.00mil 10.00mil]
-	ElementLine [-50.00mil 50.00mil 50.00mil 50.00mil 10.00mil]
-	ElementLine [50.00mil 50.00mil 50.00mil -50.00mil 10.00mil]
-
-	)
-
 Element["" "0603" "D2" "unknown" 1360.00mil 33.3860mm -22.09mil 34.09mil 0 77 ""]
 (
 	Pad[-4.92mil -25.59mil 4.92mil -25.59mil 29.52mil 20.00mil 35.52mil "1" "1" "square"]
@@ -1421,6 +1400,27 @@ Element["" "JUMPER3" "UART" "unknown" 1975.00mil 2100.00mil -240.00mil 50.00mil 
 	ElementLine [50.00mil -50.00mil 50.00mil 50.00mil 10.00mil]
 	ElementLine [-50.00mil -50.00mil -50.00mil 50.00mil 10.00mil]
 	ElementLine [-50.00mil 50.00mil 50.00mil 50.00mil 10.00mil]
+
+	)
+
+Element["" "HEADER10_2" "REMOTE" "unknown" 2775.00mil 1475.00mil -50.00mil -50.00mil 3 100 ""]
+(
+	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "1" "1" "square"]
+	Pin[100.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "2" "2" ""]
+	Pin[0.0000 100.00mil 60.00mil 30.00mil 66.00mil 38.00mil "3" "3" "thermal(1X)"]
+	Pin[100.00mil 100.00mil 60.00mil 30.00mil 66.00mil 38.00mil "4" "4" ""]
+	Pin[0.0000 200.00mil 60.00mil 30.00mil 66.00mil 38.00mil "5" "5" ""]
+	Pin[100.00mil 200.00mil 60.00mil 30.00mil 66.00mil 38.00mil "6" "6" ""]
+	Pin[0.0000 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "7" "7" ""]
+	Pin[100.00mil 300.00mil 60.00mil 30.00mil 66.00mil 38.00mil "8" "8" ""]
+	Pin[0.0000 400.00mil 60.00mil 30.00mil 66.00mil 38.00mil "9" "9" ""]
+	Pin[100.00mil 400.00mil 60.00mil 30.00mil 66.00mil 38.00mil "10" "10" ""]
+	ElementLine [-50.00mil -50.00mil -50.00mil 450.00mil 10.00mil]
+	ElementLine [-50.00mil 450.00mil 150.00mil 450.00mil 10.00mil]
+	ElementLine [150.00mil 450.00mil 150.00mil -50.00mil 10.00mil]
+	ElementLine [150.00mil -50.00mil -50.00mil -50.00mil 10.00mil]
+	ElementLine [-50.00mil 50.00mil 50.00mil 50.00mil 10.00mil]
+	ElementLine [50.00mil 50.00mil 50.00mil -50.00mil 10.00mil]
 
 	)
 Layer(1 "top")
@@ -2229,19 +2229,19 @@ NetList()
 	)
 	Net("EC_OUT" "(unknown)")
 	(
-		Connect("REMOTE-7")
+		Connect("REMOTE-8")
 		Connect("U2-45")
 	)
 	Net("EC_RANGE" "(unknown)")
 	(
-		Connect("REMOTE-10")
+		Connect("REMOTE-2")
 		Connect("U2-29")
 	)
 	Net("EXT_WAKEUP" "(unknown)")
 	(
 		Connect("EXT_WKUP-1")
 		Connect("R5-2")
-		Connect("REMOTE-6")
+		Connect("REMOTE-10")
 		Connect("U2-21")
 	)
 	Net("FLASH_\\_CS\\_" "(unknown)")
@@ -2280,7 +2280,7 @@ NetList()
 		Connect("R5-1")
 		Connect("R6-1")
 		Connect("R12-2")
-		Connect("REMOTE-2")
+		Connect("REMOTE-3")
 		Connect("RESET-2")
 		Connect("SD_CARD-6")
 		Connect("U1-2")
@@ -2296,14 +2296,14 @@ NetList()
 	(
 		Connect("I2C-1")
 		Connect("R8-2")
-		Connect("REMOTE-9")
+		Connect("REMOTE-4")
 		Connect("U2-27")
 	)
 	Net("I2C_SDA" "(unknown)")
 	(
 		Connect("I2C-2")
 		Connect("R7-2")
-		Connect("REMOTE-8")
+		Connect("REMOTE-6")
 		Connect("U2-28")
 	)
 	Net("LED" "(unknown)")
@@ -2328,7 +2328,7 @@ NetList()
 	)
 	Net("PD_INT" "(unknown)")
 	(
-		Connect("REMOTE-5")
+		Connect("REMOTE-9")
 		Connect("U2-34")
 	)
 	Net("REMOTE_EN" "(unknown)")
@@ -2385,7 +2385,7 @@ NetList()
 	)
 	Net("TEMP_OUT" "(unknown)")
 	(
-		Connect("REMOTE-3")
+		Connect("REMOTE-5")
 		Connect("U2-30")
 	)
 	Net("UART_RX" "(unknown)")
