@@ -1983,7 +1983,7 @@ Layer(7 "outline")
 	Line[1300.00mil 2200.00mil 2850.00mil 2200.00mil 10.00mil 20.00mil "clearline"]
 	Line[1300.00mil 1200.00mil 2850.00mil 1200.00mil 10.00mil 20.00mil "clearline"]
 	Arc[1300.00mil 2100.00mil 100.00mil 100.00mil 10.00mil 20.00mil 90 -90 "clearline"]
-	Arc[1300.00mil 1300.00mil 100.00mil 100.00mil 10.00mil 20.00mil 0 -90 "clearline"]
+	Arc[1300.00mil 1300.00mil 100.00mil 100.00mil 10.00mil 20.00mil 0 -90 "found,clearline"]
 	Arc[2850.00mil 1300.00mil 100.00mil 100.00mil 10.00mil 20.00mil -90 -90 "clearline"]
 	Arc[2850.00mil 2100.00mil 100.00mil 100.00mil 10.00mil 20.00mil 180 -90 "clearline"]
 )
