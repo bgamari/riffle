@@ -1,18 +1,27 @@
 Element["" "" "" "" 161417 134646 0 0 0 100 ""]
 (
-	Pin[-9843 -10630 5100 2000 5700 3500 "t" "6" ""]
-	Pin[9843 -10630 5100 2000 5700 3500 "t" "7" ""]
-	Pin[-13386 0 6100 2000 6700 4500 "t" "8" ""]
-	Pin[13386 0 6100 2000 6700 4500 "t" "9" ""]
-	Pad[0 -12520 0 -8780 1575 2000 2575 "333" "3" "square"]
-	Pad[2559 -12520 2559 -8780 1575 2000 2575 "4444" "4" "square"]
-	Pad[-2559 -12520 -2559 -8780 1575 2000 2575 "222" "2" "square"]
-	Pad[5118 -12520 5118 -8780 1575 2000 2575 "5555" "5" "square"]
-	Pad[-5118 -12520 -5118 -8780 1575 2000 2575 "111" "1" "square"]
-	ElementLine [-13386 5709 13386 5709 1000]
-	ElementLine [-13386 -3937 -13386 -10827 1000]
-	ElementLine [13386 -3937 13386 -10827 1000]
-	ElementLine [13386 5709 13386 3937 1000]
-	ElementLine [-13386 5709 -13386 3937 1000]
+        # x=0 defined by axis of symmetry
+        # y=0 defined to be 0.7mm inside of board edge
+        
+	Pad[-1.30mm   -3.60mm   -1.30mm    -5.50mm 0.4mm 2000 2575 "333" "1" "square"]
+	Pad[-0.65mm   -3.60mm   -0.65mm    -5.50mm 0.4mm 2000 2575 "333" "2" "square"]
+	Pad[ 0.00mm   -3.60mm    0.00mm    -5.50mm 0.4mm 2000 2575 "333" "3" "square"]
+	Pad[ 0.65mm   -3.60mm    0.65mm    -5.50mm 0.4mm 2000 2575 "333" "4" "square"]
+	Pad[ 1.30mm   -3.60mm    1.30mm    -5.50mm 0.4mm 2000 2575 "333" "5" "square"]
+
+	Pad[ 3.95mm   -1.45mm    3.55mm    -1.45mm 1.9mm 2000 2575 "333" "g" "square"]
+	Pad[-3.95mm   -1.45mm   -3.55mm    -1.45mm 1.9mm 2000 2575 "333" "g" "square"]
+
+	Pad[ 1.10mm   -1.45mm    1.15mm    -1.45mm 1.9mm 2000 2575 "333" "g" "square"]
+	Pad[-1.10mm   -1.45mm   -1.15mm    -1.45mm 1.9mm 2000 2575 "333" "g" "square"]
+
+	ElementLine [-4.5mm   0.70mm   -4.5mm   -0.40mm 1000]
+	ElementLine [ 4.5mm   0.70mm    4.5mm   -0.40mm 1000]
+
+	ElementLine [-4.5mm  -2.50mm   -4.5mm   -5.00mm 1000]
+	ElementLine [ 4.5mm  -2.50mm    4.5mm   -5.00mm 1000]
+        
+	ElementLine [-4.5mm  -5.00mm   -1.6mm   -5.00mm 1000]
+	ElementLine [ 4.5mm  -5.00mm    1.6mm   -5.00mm 1000]
 
 	)
