@@ -885,7 +885,7 @@ Element["" "0603" "R2" "33" 37.4500mm 1680.00mil -31.50mil 18.50mil 0 77 ""]
 
 	)
 
-Element["" "PTS-810" "S1" "unknown" 70.0199mm 53.2100mm 130.00mil -35.00mil 0 100 ""]
+Element["" "PTS-810" "S1" "unknown" 70.0199mm 53.2100mm -110.00mil -140.00mil 0 100 ""]
 (
 	Pad[-102.36mil 55.12mil -61.02mil 55.12mil 27.56mil 20.00mil 47.56mil "" "1" "square"]
 	Pad[61.02mil 55.12mil 102.36mil 55.12mil 27.56mil 20.00mil 47.56mil "" "1" "square,edge2"]
