@@ -893,7 +893,7 @@ Element["" "pads10" "CONN" "unknown" 1450.00mil 875.00mil 40.00mil -315.00mil 1 
 	Pin[0.0000 -450.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "4" ""]
 	Pin[0.0000 -375.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "5" ""]
 	Pin[0.0000 -300.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "6" ""]
-	Pin[0.0000 -225.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "7" ""]
+	Pin[0.0000 -225.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "7" "thermal(1X)"]
 	Pin[0.0000 -150.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "8" ""]
 	Pin[0.0000 -75.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "9" ""]
 	Pin[0.0000 0.0000 60.00mil 20.00mil 66.00mil 35.00mil "" "10" ""]
@@ -1344,6 +1344,7 @@ NetList()
 		Connect("C7-2")
 		Connect("C8-1")
 		Connect("CONN-3")
+		Connect("CONN-7")
 		Connect("U1-3")
 		Connect("U2-2")
 		Connect("U2-3")
