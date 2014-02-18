@@ -83,3 +83,10 @@ hackvana-gerbers.zip : hackvana-gerbers
 	rm -f $@
 	zip -j $@ hackvana-gerbers/*
 	@echo "Be sure to add a version number to the zip file name"
+
+%.png : %.gvp
+	gerbv -x png --dpi=600 -o $@ -p $<
+
+%.svg : %.gvp
+	gerbv -x svg --dpi=600 -o $@ -p $<
+
