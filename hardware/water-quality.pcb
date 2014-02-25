@@ -5,7 +5,7 @@ FileVersion[20091103]
 
 PCB["riffle" 6000.00mil 5000.00mil]
 
-Grid[500.000000 0.0000 0.0000 0]
+Grid[1000.000000 0.0000 0.0000 0]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[6.00mil 10.00mil 6.00mil 6.00mil 13.00mil 8.00mil]
@@ -786,7 +786,7 @@ Symbol['~' 12.00mil]
 	SymbolLine[20.00mil 35.00mil 25.00mil 30.00mil 8.00mil]
 )
 Attribute("PCB::grid::unit" "mil")
-Attribute("PCB::grid::size" "5.00mil")
+Attribute("PCB::grid::size" "10.00mil")
 Via[1525.00mil 1625.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
 Via[1640.00mil 1830.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
 Via[1210.00mil 2100.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
@@ -1114,26 +1114,6 @@ Element["" "SOT23" "Q3" "unknown" 2540.00mil 1395.00mil -90.00mil -110.00mil 0 1
 
 	)
 
-Element["" "micro-usb" "USB" "unknown" 1175.00mil 1650.00mil 160.00mil 175.00mil 0 100 ""]
-(
-	Pad[3.6000mm -1.3000mm 5.5000mm -1.3000mm 0.4000mm 20.00mil 25.75mil "333" "1" "square,edge2"]
-	Pad[3.6000mm -0.6500mm 5.5000mm -0.6500mm 0.4000mm 20.00mil 25.75mil "333" "2" "square,edge2"]
-	Pad[3.6000mm 0.0000 5.5000mm 0.0000 0.4000mm 20.00mil 25.75mil "333" "3" "square,edge2"]
-	Pad[3.6000mm 0.6500mm 5.5000mm 0.6500mm 0.4000mm 20.00mil 25.75mil "333" "4" "square,edge2"]
-	Pad[3.6000mm 1.3000mm 5.5000mm 1.3000mm 0.4000mm 20.00mil 25.75mil "333" "5" "square,edge2"]
-	Pad[1.4500mm 3.5500mm 1.4500mm 3.9500mm 1.9000mm 20.00mil 25.75mil "333" "g" "square,edge2"]
-	Pad[1.4500mm -3.9500mm 1.4500mm -3.5500mm 1.9000mm 20.00mil 25.75mil "333" "g" "square"]
-	Pad[1.4500mm 1.1000mm 1.4500mm 1.1500mm 1.9000mm 20.00mil 25.75mil "333" "g" "square,edge2"]
-	Pad[1.4500mm -1.1500mm 1.4500mm -1.1000mm 1.9000mm 20.00mil 25.75mil "333" "g" "square"]
-	ElementLine [-0.7000mm -4.5000mm 0.4000mm -4.5000mm 10.00mil]
-	ElementLine [-0.7000mm 4.5000mm 0.4000mm 4.5000mm 10.00mil]
-	ElementLine [2.5000mm -4.5000mm 5.0000mm -4.5000mm 10.00mil]
-	ElementLine [2.5000mm 4.5000mm 5.0000mm 4.5000mm 10.00mil]
-	ElementLine [5.0000mm -4.5000mm 5.0000mm -1.6000mm 10.00mil]
-	ElementLine [5.0000mm 1.6000mm 5.0000mm 4.5000mm 10.00mil]
-
-	)
-
 Element["" "0805" "L3" "2.2u" 39.7619mm 1270.00mil -16.50mil -71.50mil 0 75 ""]
 (
 	Pad[-35.43mil -3.93mil -35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
@@ -1165,7 +1145,7 @@ Element["" "0603" "C2" "10u" 1450.00mil 1275.00mil 20.00mil -1.4920mm 0 54 ""]
 
 	)
 
-Element["" "TQFP48" "U2" "Val" 1850.00mil 1725.00mil 0.0000 -2.0000mm 0 100 ""]
+Element["" "TQFP48" "U2" "unknown" 1850.00mil 1725.00mil 0.0000 -2.0000mm 0 100 ""]
 (
 	Pad[-4.8650mm -2.7500mm -3.6350mm -2.7500mm 0.2700mm 0.0000 0.2700mm "1" "1" "square"]
 	Pad[-4.8650mm -2.2500mm -3.6350mm -2.2500mm 0.2700mm 0.0000 0.2700mm "2" "2" "square"]
@@ -1563,6 +1543,26 @@ Element["" "0603" "C11" "10u" 2600.00mil 1925.00mil -115.00mil -0.6030mm 0 77 ""
 	ElementLine [1.2524mm -0.5524mm 1.2524mm 0.5524mm 6.00mil]
 	ElementLine [-1.2524mm 0.5524mm 1.2524mm 0.5524mm 6.00mil]
 	ElementLine [-1.2524mm -0.5524mm -1.2524mm 0.5524mm 6.00mil]
+
+	)
+
+Element["" "micro-usb" "USB" "unknown" 1175.00mil 1650.00mil 165.00mil 175.00mil 0 100 ""]
+(
+	Pad[3.6000mm -1.3000mm 5.5000mm -1.3000mm 0.4000mm 20.00mil 25.75mil "333" "1" "square,edge2"]
+	Pad[3.6000mm -0.6500mm 5.5000mm -0.6500mm 0.4000mm 20.00mil 25.75mil "333" "2" "square,edge2"]
+	Pad[3.6000mm 0.0000 5.5000mm 0.0000 0.4000mm 20.00mil 25.75mil "333" "3" "square,edge2"]
+	Pad[3.6000mm 0.6500mm 5.5000mm 0.6500mm 0.4000mm 20.00mil 25.75mil "333" "4" "square,edge2"]
+	Pad[3.6000mm 1.3000mm 5.5000mm 1.3000mm 0.4000mm 20.00mil 25.75mil "333" "5" "square,edge2"]
+	Pad[1.4500mm 3.5500mm 1.4500mm 3.9500mm 1.9000mm 20.00mil 78.00mil "333" "g" "square,edge2"]
+	Pad[1.4500mm -3.9500mm 1.4500mm -3.5500mm 1.9000mm 20.00mil 78.00mil "333" "g" "square"]
+	Pad[1.4500mm 1.1000mm 1.4500mm 1.1500mm 1.9000mm 20.00mil 78.00mil "333" "g" "square,edge2"]
+	Pad[1.4500mm -1.1500mm 1.4500mm -1.1000mm 1.9000mm 20.00mil 78.00mil "333" "g" "square"]
+	ElementLine [-0.7000mm -4.5000mm 0.4000mm -4.5000mm 10.00mil]
+	ElementLine [-0.7000mm 4.5000mm 0.4000mm 4.5000mm 10.00mil]
+	ElementLine [2.5000mm -4.5000mm 5.0000mm -4.5000mm 10.00mil]
+	ElementLine [2.5000mm 4.5000mm 5.0000mm 4.5000mm 10.00mil]
+	ElementLine [5.0000mm -4.5000mm 5.0000mm -1.6000mm 10.00mil]
+	ElementLine [5.0000mm 1.6000mm 5.0000mm 4.5000mm 10.00mil]
 
 	)
 Layer(1 "top")
@@ -2169,7 +2169,7 @@ Layer(7 "outline")
 	Line[1175.00mil 2100.00mil 1175.00mil 1300.00mil 10.00mil 20.00mil "clearline"]
 	Line[2950.00mil 1300.00mil 2950.00mil 2100.00mil 10.00mil 20.00mil "clearline"]
 	Line[1275.00mil 2200.00mil 2850.00mil 2200.00mil 10.00mil 20.00mil "clearline"]
-	Line[1275.00mil 1200.00mil 2850.00mil 1200.00mil 10.00mil 20.00mil "found,clearline"]
+	Line[1275.00mil 1200.00mil 2850.00mil 1200.00mil 10.00mil 20.00mil "clearline"]
 	Arc[1275.00mil 2100.00mil 100.00mil 100.00mil 10.00mil 20.00mil 90 -90 "clearline"]
 	Arc[1275.00mil 1300.00mil 100.00mil 100.00mil 10.00mil 20.00mil 0 -90 "clearline"]
 	Arc[2850.00mil 1300.00mil 100.00mil 100.00mil 10.00mil 20.00mil -90 -90 "clearline"]

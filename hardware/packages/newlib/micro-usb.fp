@@ -9,11 +9,11 @@ Element["" "" "" "" 161417 134646 0 0 0 100 ""]
 	Pad[ 0.65mm   -3.60mm    0.65mm    -5.50mm 0.4mm 2000 2575 "333" "4" "square"]
 	Pad[ 1.30mm   -3.60mm    1.30mm    -5.50mm 0.4mm 2000 2575 "333" "5" "square"]
 
-	Pad[ 3.95mm   -1.45mm    3.55mm    -1.45mm 1.9mm 2000 2575 "333" "g" "square"]
-	Pad[-3.95mm   -1.45mm   -3.55mm    -1.45mm 1.9mm 2000 2575 "333" "g" "square"]
+	Pad[ 3.95mm   -1.45mm    3.55mm    -1.45mm 1.9mm 2000 7800 "333" "g" "square"]
+	Pad[-3.95mm   -1.45mm   -3.55mm    -1.45mm 1.9mm 2000 7800 "333" "g" "square"]
 
-	Pad[ 1.10mm   -1.45mm    1.15mm    -1.45mm 1.9mm 2000 2575 "333" "g" "square"]
-	Pad[-1.10mm   -1.45mm   -1.15mm    -1.45mm 1.9mm 2000 2575 "333" "g" "square"]
+	Pad[ 1.10mm   -1.45mm    1.15mm    -1.45mm 1.9mm 2000 7800 "333" "g" "square"]
+	Pad[-1.10mm   -1.45mm   -1.15mm    -1.45mm 1.9mm 2000 7800 "333" "g" "square"]
 
 	ElementLine [-4.5mm   0.70mm   -4.5mm   -0.40mm 1000]
 	ElementLine [ 4.5mm   0.70mm    4.5mm   -0.40mm 1000]
