@@ -5,7 +5,7 @@ FileVersion[20091103]
 
 PCB["" 6000.00mil 5000.00mil]
 
-Grid[500.000000 0.0000 0.0000 0]
+Grid[2500.000000 0.0000 0.0000 0]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[8.00mil 10.00mil 8.00mil 8.00mil 13.00mil 7.00mil]
@@ -786,7 +786,7 @@ Symbol['~' 12.00mil]
 	SymbolLine[20.00mil 35.00mil 25.00mil 30.00mil 8.00mil]
 )
 Attribute("PCB::grid::unit" "mil")
-Attribute("PCB::grid::size" "5.00mil")
+Attribute("PCB::grid::size" "25.00mil")
 Via[1760.00mil 900.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
 Via[1610.00mil 750.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
 Via[1530.00mil 760.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(4X)"]
@@ -1020,17 +1020,6 @@ Element["" "0603" "LED5" "unknown" 1735.00mil 320.59mil 13.50mil 17.32mil 0 53 "
 
 	)
 
-Element["" "reed-switch" "REED_SW" "unknown" 1945.00mil 505.00mil -30.00mil 120.00mil 1 100 ""]
-(
-	Pad[5.00mil -325.00mil 5.00mil -285.00mil 40.00mil 20.00mil 60.00mil "" "1" "square"]
-	Pad[5.00mil 265.00mil 5.00mil 305.00mil 40.00mil 20.00mil 60.00mil "" "2" "square,edge2"]
-	ElementLine [-45.00mil 240.00mil 50.00mil 240.00mil 10.00mil]
-	ElementLine [-45.00mil -255.00mil 50.00mil -255.00mil 10.00mil]
-	ElementLine [-45.00mil -255.00mil -45.00mil 240.00mil 10.00mil]
-	ElementLine [50.00mil -255.00mil 50.00mil 240.00mil 10.00mil]
-
-	)
-
 Element["" "TO92" "U1" "unknown" 1550.00mil 175.00mil 50.00mil 180.00mil 0 100 ""]
 (
 	Pin[0.0000 200.00mil 72.00mil 30.00mil 78.00mil 42.00mil "1" "1" "square,thermal(4X)"]
@@ -1077,6 +1066,17 @@ Element["" "JUMPER1" "ECM" "unknown" 1550.00mil 900.00mil -35.00mil -95.00mil 0 
 	ElementLine [50.00mil -50.00mil -50.00mil -50.00mil 10.00mil]
 	ElementLine [-50.00mil 50.00mil 50.00mil 50.00mil 10.00mil]
 	ElementLine [50.00mil 50.00mil 50.00mil -50.00mil 10.00mil]
+
+	)
+
+Element["" "reed-switch" "REED_SW" "unknown" 1945.00mil 505.00mil -30.00mil 120.00mil 1 100 ""]
+(
+	Pad[5.00mil -325.00mil 5.00mil -285.00mil 40.00mil 20.00mil 60.00mil "" "1" "square"]
+	Pad[5.00mil 265.00mil 5.00mil 305.00mil 40.00mil 20.00mil 60.00mil "" "2" "square,edge2"]
+	ElementLine [-45.00mil 240.00mil 50.00mil 240.00mil 10.00mil]
+	ElementLine [-45.00mil -255.00mil 50.00mil -255.00mil 10.00mil]
+	ElementLine [-45.00mil -255.00mil -45.00mil 240.00mil 10.00mil]
+	ElementLine [50.00mil -255.00mil 50.00mil 240.00mil 10.00mil]
 
 	)
 Layer(1 "top")
@@ -1134,7 +1134,6 @@ Layer(1 "top")
 	Line[1875.00mil 430.00mil 1910.00mil 430.00mil 25.00mil 20.00mil "clearline"]
 	Line[1895.00mil 185.00mil 1905.00mil 175.00mil 10.00mil 20.00mil "clearline"]
 	Line[1905.00mil 175.00mil 1905.00mil 160.00mil 10.00mil 20.00mil "clearline"]
-	Line[1950.00mil 255.00mil 1950.00mil 200.00mil 10.00mil 20.00mil "clearline"]
 	Line[43.5710mm 12.8170mm 1690.00mil 530.00mil 10.00mil 20.00mil "clearline"]
 	Line[1540.00mil 530.00mil 1530.00mil 540.00mil 10.00mil 20.00mil "clearline"]
 	Line[1690.00mil 530.00mil 1540.00mil 530.00mil 10.00mil 20.00mil "clearline"]
@@ -1164,6 +1163,7 @@ Layer(1 "top")
 	Line[46.8480mm 890.00mil 1850.00mil 22.4640mm 10.00mil 20.00mil "clearline"]
 	Line[1750.00mil 890.00mil 42.5600mm 890.00mil 10.00mil 20.00mil "clearline"]
 	Line[42.5600mm 890.00mil 1670.00mil 22.4640mm 10.00mil 20.00mil "clearline"]
+	Line[1950.00mil 255.00mil 1950.00mil 200.00mil 10.00mil 20.00mil "clearline"]
 )
 Layer(2 "ground")
 (
@@ -1286,13 +1286,13 @@ Layer(6 "bottom")
 Layer(7 "outline")
 (
 	Line[1400.00mil 175.00mil 1400.00mil 925.00mil 10.00mil 20.00mil "clearline"]
-	Line[1400.00mil 925.00mil 1450.00mil 975.00mil 10.00mil 20.00mil "clearline"]
 	Line[1450.00mil 975.00mil 1950.00mil 975.00mil 10.00mil 20.00mil "clearline"]
-	Line[1950.00mil 975.00mil 2000.00mil 925.00mil 10.00mil 20.00mil "clearline"]
 	Line[2000.00mil 925.00mil 2000.00mil 175.00mil 10.00mil 20.00mil "clearline"]
 	Line[1950.00mil 125.00mil 1450.00mil 125.00mil 10.00mil 20.00mil "clearline"]
-	Line[1450.00mil 125.00mil 1400.00mil 175.00mil 10.00mil 20.00mil "clearline"]
-	Line[2000.00mil 175.00mil 1950.00mil 125.00mil 10.00mil 20.00mil "clearline"]
+	Arc[1450.00mil 175.00mil 50.00mil 50.00mil 10.00mil 20.00mil 0 -90 "clearline"]
+	Arc[1950.00mil 175.00mil 50.00mil 50.00mil 10.00mil 20.00mil -90 -90 "clearline"]
+	Arc[1950.00mil 925.00mil 50.00mil 50.00mil 10.00mil 20.00mil 90 90 "clearline"]
+	Arc[1450.00mil 925.00mil 50.00mil 50.00mil 10.00mil 20.00mil 90 -90 "clearline"]
 )
 Layer(8 "spare")
 (
