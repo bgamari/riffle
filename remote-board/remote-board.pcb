@@ -9,7 +9,7 @@ Grid[1000.000000 0.0000 0.0000 0]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[8.00mil 10.00mil 8.00mil 8.00mil 13.00mil 7.00mil]
-Flags("showdrc,nameonpcb,clearnew,snappin,thindrawpoly,locknames")
+Flags("showdrc,nameonpcb,clearnew,snappin,thindrawpoly,onlynames")
 Groups("1,c:2:3,5:4,6,s:7:8")
 Styles["Signal,10.00mil,36.00mil,20.00mil,10.00mil:Power,25.00mil,60.00mil,35.00mil,10.00mil:Fat,40.00mil,60.00mil,35.00mil,10.00mil:Skinny,6.00mil,30.00mil,13.00mil,8.00mil"]
 
@@ -856,26 +856,6 @@ Element["" "MS5803" "U2" "unknown" 1740.00mil 575.00mil -175.00mil -2.1270mm 0 1
 
 	)
 
-Element["" "pads10" "CONN" "unknown" 1450.00mil 875.00mil 40.00mil -315.00mil 1 100 ""]
-(
-	Pin[0.0000 -675.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "1" "thermal(4X)"]
-	Pin[0.0000 -600.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "2" ""]
-	Pin[0.0000 -525.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "3" "thermal(1X)"]
-	Pin[0.0000 -450.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "4" ""]
-	Pin[0.0000 -375.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "5" ""]
-	Pin[0.0000 -300.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "6" ""]
-	Pin[0.0000 -225.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "7" "thermal(1X)"]
-	Pin[0.0000 -150.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "8" ""]
-	Pin[0.0000 -75.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "9" ""]
-	Pin[0.0000 0.0000 60.00mil 20.00mil 66.00mil 35.00mil "" "10" ""]
-	ElementLine [-40.00mil -40.00mil 40.00mil -40.00mil 10.00mil]
-	ElementLine [40.00mil -720.00mil 40.00mil 40.00mil 10.00mil]
-	ElementLine [-40.00mil -720.00mil 40.00mil -720.00mil 10.00mil]
-	ElementLine [-40.00mil -720.00mil -40.00mil 40.00mil 10.00mil]
-	ElementLine [-40.00mil 40.00mil 40.00mil 40.00mil 10.00mil]
-
-	)
-
 Element["" "SOT26" "U5" "unknown" 1722.00mil 932.00mil -30.00mil -174.00mil 0 100 ""]
 (
 	Pad[0.0000 -8.00mil 0.0000 8.00mil 24.00mil 30.00mil 30.00mil "1" "1" "square,edge2"]
@@ -1109,6 +1089,26 @@ Element["onsolder" "0603" "C1" "100n" 46.3310mm 820.00mil -0.9680mm 2.0000mm 0 1
 	ElementLine [1.2524mm -0.5524mm 1.2524mm 0.5524mm 6.00mil]
 	ElementLine [-1.2524mm -0.5524mm 1.2524mm -0.5524mm 6.00mil]
 	ElementLine [-1.2524mm -0.5524mm -1.2524mm 0.5524mm 6.00mil]
+
+	)
+
+Element["" "pads10" "CONN" "unknown" 1450.00mil 200.00mil 90.00mil 270.00mil 3 77 ""]
+(
+	Pin[0.0000 0.0000 60.00mil 20.00mil 66.00mil 35.00mil "" "1" "thermal(4X)"]
+	Pin[0.0000 75.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "2" ""]
+	Pin[0.0000 150.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "3" "thermal(1X)"]
+	Pin[0.0000 225.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "4" ""]
+	Pin[0.0000 300.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "5" ""]
+	Pin[0.0000 375.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "6" ""]
+	Pin[0.0000 450.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "7" "thermal(1X)"]
+	Pin[0.0000 525.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "8" ""]
+	Pin[0.0000 600.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "9" ""]
+	Pin[0.0000 675.00mil 60.00mil 20.00mil 66.00mil 35.00mil "" "10" ""]
+	ElementLine [-40.00mil 35.00mil 40.00mil 35.00mil 10.00mil]
+	ElementLine [40.00mil -45.00mil 40.00mil 715.00mil 10.00mil]
+	ElementLine [-40.00mil -45.00mil 40.00mil -45.00mil 10.00mil]
+	ElementLine [-40.00mil -45.00mil -40.00mil 715.00mil 10.00mil]
+	ElementLine [-40.00mil 715.00mil 40.00mil 715.00mil 10.00mil]
 
 	)
 Layer(1 "top")
