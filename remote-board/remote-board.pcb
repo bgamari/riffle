@@ -818,7 +818,7 @@ Via[1680.00mil 820.00mil 30.00mil 16.00mil 0.0000 13.00mil "" ""]
 Via[1715.00mil 295.00mil 30.00mil 16.00mil 0.0000 13.00mil "" ""]
 Via[1590.00mil 390.00mil 30.00mil 16.00mil 0.0000 13.00mil "" ""]
 
-Element["" "JUMPER1" "ECP" "unknown" 1930.00mil 900.00mil -35.00mil -95.00mil 0 77 ""]
+Element["" "JUMPER1" "ECP" "unknown" 1930.00mil 900.00mil -75.00mil -155.00mil 0 77 ""]
 (
 	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "1" "1" "square"]
 	ElementLine [-50.00mil -50.00mil -50.00mil 50.00mil 10.00mil]
@@ -885,7 +885,7 @@ Element["" "0603" "LED1" "unknown" 1710.00mil 180.00mil -148.50mil -31.50mil 3 5
 
 	)
 
-Element["" "TCS3472" "U3" "unknown" 1570.00mil 720.00mil -50.00mil -3.7780mm 0 100 ""]
+Element["" "TCS3472" "U3" "unknown" 1570.00mil 720.00mil -70.00mil -3.7780mm 0 100 ""]
 (
 	Pad[-0.6500mm 0.4500mm -0.6500mm 1.5500mm 0.4000mm 0.0000 0.4000mm "1" "1" "square,edge2"]
 	Pad[0.0000 0.4500mm 0.0000 1.5500mm 0.4000mm 0.0000 0.4000mm "2" "2" "square,edge2"]
@@ -1026,7 +1026,7 @@ Element["" "0603" "C7" "1u" 1850.00mil 910.00mil -20.00mil -2.1270mm 0 54 ""]
 
 	)
 
-Element["found" "0603" "R2" "unknown" 1880.00mil 160.00mil 0.0000 2.0000mm 2 100 ""]
+Element["found" "0603" "R2" "unknown" 1880.00mil 160.00mil 30.00mil 2.2540mm 2 77 ""]
 (
 	Pad[0.7500mm -0.0500mm 0.7500mm 0.0500mm 0.7000mm 12.00mil 0.8524mm "1" "1" "square"]
 	Pad[-0.7500mm -0.0500mm -0.7500mm 0.0500mm 0.7000mm 12.00mil 0.8524mm "2" "2" "square"]
