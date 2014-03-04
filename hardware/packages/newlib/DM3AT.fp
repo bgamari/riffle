@@ -1,24 +1,32 @@
 
 Element["" "" "" "" 8.0000mm 9.1000mm 0.0000 0.0000 0 100 ""]
 (
-	Pad[-7.2000mm -4.9000mm -7.2000mm -3.7000mm 1.0000mm 20.00mil 1.5080mm "CASE" "11" "square"]
-	Pad[-7.2000mm 1.7000mm -7.2000mm 2.5000mm 1.0000mm 20.00mil 1.5080mm "CASE" "10" "square,edge2"]
-	Pad[-7.2000mm 4.6000mm -7.2000mm 7.4000mm 1.0000mm 20.00mil 1.5080mm "CASE" "9" "square,edge2"]
-	Pad[-6.3000mm -8.6000mm -6.3000mm -7.4000mm 0.7000mm 20.00mil 1.2080mm "DAT1" "8" "square"]
-	Pad[-5.4000mm -8.6000mm -5.4000mm -7.4000mm 0.7000mm 20.00mil 1.2080mm "DAT0" "7" "square"]
-	Pad[-4.3000mm -8.6000mm -4.3000mm -7.4000mm 0.7000mm 20.00mil 1.2080mm "VSS" "6" "square"]
-	Pad[-3.2000mm -8.6000mm -3.2000mm -7.4000mm 0.7000mm 20.00mil 1.2080mm "CLK" "5" "square"]
-	Pad[-2.1000mm -8.6000mm -2.1000mm -7.4000mm 0.7000mm 20.00mil 1.2080mm "VDD" "4" "square"]
-	Pad[-1.0000mm -8.6000mm -1.0000mm -7.4000mm 0.7000mm 20.00mil 1.2080mm "CMD" "3" "square"]
-	Pad[0.1000mm -8.6000mm 0.1000mm -7.4000mm 0.7000mm 20.00mil 1.2080mm "CD/DAT3" "2" "square"]
-	Pad[1.2000mm -8.6000mm 1.2000mm -7.4000mm 0.7000mm 20.00mil 1.2080mm "DAT2" "1" "square"]
-	Pad[2.3000mm -8.6000mm 2.3000mm -7.4000mm 0.7000mm 20.00mil 1.2080mm "" "12" "square"]
-	Pad[6.3000mm 5.5000mm 6.3000mm 7.3000mm 1.3000mm 20.00mil 1.8080mm "CASE" "13" "square,edge2"]
-	Pad[3.8000mm -8.5000mm 3.8000mm -7.3000mm 1.0000mm 20.00mil 1.5080mm "" "14" "square"]
-	ElementLine [-7.9000mm 7.9000mm -7.9000mm -9.0000mm 0.2000mm]
-	ElementLine [-7.9000mm -9.0000mm 7.2000mm -9.0000mm 0.2000mm]
-	ElementLine [7.2000mm -9.0000mm 7.2000mm 8.1000mm 0.2000mm]
-	ElementLine [7.2000mm 8.1000mm -7.9000mm 8.1000mm 0.2000mm]
-	ElementLine [-7.9000mm 8.1000mm -7.9000mm 7.8000mm 0.2000mm]
+        # origin is horizontal center of bottom edge of pin 1
+
+        # top pads
+	Pad[ 1.55mm  0.00mm  1.55mm -0.50mm    1.00mm 20.00mil 1.5080mm ""        ""   "square"]
+	Pad[ 0.00mm  0.00mm  0.00mm -0.50mm    0.70mm 20.00mil 1.5080mm "DAT2"    "1"  "square"]
+	Pad[-1.10mm  0.00mm -1.10mm -0.50mm    0.70mm 20.00mil 1.5080mm "CD/DAT3" "2"  "square"]
+	Pad[-2.20mm  0.00mm -2.20mm -0.50mm    0.70mm 20.00mil 1.5080mm "CMD"     "3"  "square"]
+	Pad[-3.30mm  0.00mm -3.30mm -0.50mm    0.70mm 20.00mil 1.5080mm "VDD"     "4"  "square"]
+	Pad[-4.40mm  0.00mm -4.40mm -0.50mm    0.70mm 20.00mil 1.5080mm "CLK"     "5"  "square"]
+	Pad[-5.50mm  0.00mm -5.50mm -0.50mm    0.70mm 20.00mil 1.5080mm "VSS"     "6"  "square"]
+	Pad[-6.60mm  0.00mm -6.60mm -0.50mm    0.70mm 20.00mil 1.5080mm "DAT0"    "7"  "square"]
+	Pad[-7.70mm  0.00mm -7.70mm -0.50mm    0.70mm 20.00mil 1.5080mm "DAT1"    "8"  "square"]
+	Pad[-8.65mm  0.00mm -8.65mm -0.50mm    0.70mm 20.00mil 1.5080mm "CDB"     "9"  "square"]
+
+        # Left side
+	Pad[-9.60mm  3.60mm -9.60mm  3.80mm    1.00mm 20.00mil 1.5080mm ""        ""   "square"]
+	Pad[-9.60mm 10.00mm -9.60mm  9.80mm    1.00mm 20.00mil 1.5080mm "CDA"     "10" "square"]
+	Pad[-9.60mm 14.95mm -9.60mm 13.15mm    1.00mm 20.00mil 1.5080mm ""        ""   "square"]
+
+        # Right side
+	Pad[ 3.90mm 14.05mm  3.90mm 14.95mm    1.00mm 20.00mil 1.5080mm ""        ""   "square"]
+
+        # Outline
+	ElementLine [ 4.8mm   -1.2mm   -10.5mm   -1.2mm   0.2000mm]
+	ElementLine [-10.5mm  -1.2mm   -10.5mm    15.8mm  0.2000mm]
+	ElementLine [-10.5mm   15.8mm   4.8mm     15.8mm  0.2000mm]
+	ElementLine [ 4.8mm    15.8mm   4.8mm    -1.2mm   0.2000mm]
 
 	)
