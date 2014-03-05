@@ -894,7 +894,7 @@ C 57000 26900 1 0 0 microsd-card.sym
 T 59000 29600 5 10 1 1 0 0 1
 refdes=SD_CARD
 T 57000 26900 5 10 0 0 0 0 1
-footprint=DM3AT
+footprint=DM3D
 }
 C 56700 27800 1 270 0 gnd-1.sym
 N 54400 28300 57000 28300 4
