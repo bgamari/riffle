@@ -6,7 +6,7 @@ with_logo = true;
 
 // common dimensions
 body_od = 54;
-body_height = 40;
+body_height = 35;
 
 // square
 square_width = 25.4;
