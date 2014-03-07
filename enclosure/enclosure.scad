@@ -99,11 +99,20 @@ module cap() {
         rotate_extrude()
         translate([0.6*square_width, 0, 0])
         circle(r=eye_diam/2);
+
+        // Screw holes
+        for (theta = [-90, +90])
+        rotate(theta)
+        translate([square_width/2 + 4, 0, -1]) {
+            cylinder(r=3.2/2, h=50);
+            translate([0, 0, 8+1])
+            cylinder(r=5.5/2, h=50);
+        }
    }
 }
 
 module cap_with_support() {
-    cap($fn=10);
+    cap($fn=20);
 
     // support for board recess
     for (theta = [0, 10, -10, 20, -20])
