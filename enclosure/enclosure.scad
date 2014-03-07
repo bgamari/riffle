@@ -29,6 +29,10 @@ passage_height = 3;
 // eye
 eye_diam = 10;
 
+// screw parameters
+m3_screw_diam = 3.3;
+m3_head_diam = 5.8;
+
 delta = 0.01;
 
 module tube(r_outer, thickness, h) {
@@ -104,9 +108,9 @@ module cap() {
         for (theta = [-90, +90])
         rotate(theta)
         translate([square_width/2 + 4, 0, -1]) {
-            cylinder(r=3.2/2, h=50);
+            cylinder(r=m3_screw_diam/2, h=50);
             translate([0, 0, 8+1])
-            cylinder(r=5.5/2, h=50);
+            cylinder(r=m3_head_diam/2, h=50);
         }
    }
 }
