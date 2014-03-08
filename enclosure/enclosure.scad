@@ -6,14 +6,14 @@ with_logo = true;
 
 // common dimensions
 body_od = 54;
-body_height = 50;
+body_height = 35;
 
 // square
 square_width = 25.4;
 square_height = 20.0;
 
 // sensor board parameters
-sensor_buffer = 5;
+sensor_buffer = 10;
 sensor_board_depth = 8; // radial dimension
 sensor_board_width = 25;
 sensor_board_height = 20; // axial dimension
@@ -29,6 +29,10 @@ passage_height = 3;
 // eye
 eye_diam = 10;
 
+// screw parameters
+m3_screw_diam = 3.3;
+m3_head_diam = 5.8;
+
 delta = 0.01;
 
 module tube(r_outer, thickness, h) {
@@ -43,7 +47,7 @@ module cap() {
     difference() {
         union() {
             // body
-            cylinder(r=body_od/2, h=body_height, $fn=160);
+            cylinder(r=body_od/2, h=body_height, $fn=$fn*3);
 
             // Top square
             translate([0, 0, body_height + square_height/2 - delta])
@@ -68,19 +72,19 @@ module cap() {
         translate([0, 0, ec_wire_sep*z]) {
             rotate_extrude()
             translate([body_od/2, 0])
-            circle(r=ec_wire_diam/2, $fn=15);
+            circle(r=ec_wire_diam/2)
 
             // EC wire hook
             translate([body_od/2 - 6, 0, 0])
             rotate([90, 0, 0])
-            cylinder(r=ec_wire_diam/2, h=body_od, $fn=15, center=true);
+            cylinder(r=ec_wire_diam/2, h=body_od, center=true);
         }
 
         // Recess for wrench square
         cube([square_width, square_width, 2*square_height], center=true);
 
         // Cable passage
-        translate([delta, 0, -delta])
+        translate([delta, 0, -delta+10])
         translate([body_od/2 - sensor_board_depth, 0, 0])
         rotate([90, -90, 0])
         intersection() {
@@ -99,14 +103,22 @@ module cap() {
         rotate_extrude()
         translate([0.6*square_width, 0, 0])
         circle(r=eye_diam/2);
+
+        // Screw holes
+        for (theta = [-90, +90])
+        rotate(theta)
+        translate([square_width/2 + 4, 0, -1]) {
+            cylinder(r=m3_screw_diam/2, h=50);
+            translate([0, 0, 8+1])
+            cylinder(r=m3_head_diam/2, h=50);
+        }
    }
 }
 
 module cap_with_support() {
-    cap($fn=40);
+    cap($fn=20);
 
     // support for board recess
-    translate([0, 0, square_height+sensor_buffer])
     for (theta = [0, 10, -10, 20, -20])
     rotate([0, 0, theta])
     translate([body_od / 2 - 1, 0, sensor_buffer])
