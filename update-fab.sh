@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-fab_outputs="gerbers front.png back.png"
+fab_outputs="gerbers front.png back.png schematics.pdf"
 
 cd hardware
 rm -Rf $fab_outputs
