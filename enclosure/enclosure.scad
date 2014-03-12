@@ -14,7 +14,7 @@ square_height = 20.0;
 
 // sensor board parameters
 sensor_buffer = 10;
-sensor_board_depth = 8; // radial dimension
+sensor_board_depth = 10; // radial dimension
 sensor_board_width = 25;
 sensor_board_height = 20; // axial dimension
 
@@ -72,10 +72,10 @@ module cap() {
         translate([0, 0, ec_wire_sep*z]) {
             rotate_extrude()
             translate([body_od/2, 0])
-            circle(r=ec_wire_diam/2)
+            circle(r=ec_wire_diam/2);
 
             // EC wire hook
-            translate([body_od/2 - 6, 0, 0])
+            translate([body_od/2 - 7, 0, 0])
             rotate([90, 0, 0])
             cylinder(r=ec_wire_diam/2, h=body_od, center=true);
         }
