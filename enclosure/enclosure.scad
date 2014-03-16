@@ -134,14 +134,17 @@ module cap_with_support() {
 module pouring_jig() {
     difference() {
         cube([40, 3*2+sensor_board_width, 3*2+sensor_board_height], center=true);
+
         translate([40,0,-sensor_board_height])
-        cylinder(r=body_od/2, h=2*sensor_board_height);
+        cylinder(r=body_od/2, h=2*sensor_board_height, $fn=60);
+
         cube([2*40, sensor_board_width, sensor_board_height], center=true);
     }
 }
 
-cap_with_support();
+//cap_with_support();
 
+rotate([0, 90, 0])
 translate([50,0,0])
 translate([0, 0, sensor_board_height/2 + sensor_buffer])
 rotate(180)
