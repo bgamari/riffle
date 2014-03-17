@@ -5,11 +5,11 @@ FileVersion[20091103]
 
 PCB["" 6000.00mil 5000.00mil]
 
-Grid[1000.000000 0.0000 0.0000 0]
+Grid[500.000000 0.0000 0.0000 0]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[8.00mil 10.00mil 8.00mil 8.00mil 13.00mil 7.00mil]
-Flags("showdrc,nameonpcb,clearnew,snappin,thindrawpoly,locknames")
+Flags("showdrc,nameonpcb,clearnew,snappin,showmask,thindrawpoly,locknames")
 Groups("1,c:2:3,5:4,6,s:7:8")
 Styles["Signal,10.00mil,36.00mil,20.00mil,10.00mil:Power,25.00mil,60.00mil,35.00mil,10.00mil:Fat,40.00mil,60.00mil,35.00mil,10.00mil:Skinny,6.00mil,30.00mil,13.00mil,8.00mil"]
 
@@ -786,7 +786,7 @@ Symbol['~' 12.00mil]
 	SymbolLine[20.00mil 35.00mil 25.00mil 30.00mil 8.00mil]
 )
 Attribute("PCB::grid::unit" "mil")
-Attribute("PCB::grid::size" "10.00mil")
+Attribute("PCB::grid::size" "5.00mil")
 Via[1760.00mil 900.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
 Via[1610.00mil 750.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
 Via[1530.00mil 760.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(4X)"]
@@ -1356,6 +1356,9 @@ Layer(9 "silk")
 )
 Layer(10 "silk")
 (
+	Line[1570.00mil 385.00mil 1570.00mil 350.00mil 10.00mil 20.00mil "clearline"]
+	Line[1515.00mil 720.00mil 1550.00mil 720.00mil 10.00mil 20.00mil "clearline"]
+	Line[1695.00mil 890.00mil 1730.00mil 890.00mil 10.00mil 20.00mil "clearline"]
 )
 NetList()
 (
