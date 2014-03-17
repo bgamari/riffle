@@ -132,8 +132,9 @@ module cap_with_support() {
 }
 
 module pouring_jig() {
+    wall = 0.35*7;
     difference() {
-        cube([40, 3*2+sensor_board_width, 3*2+sensor_board_height], center=true);
+        cube([40, wall*2+sensor_board_width, wall*2+sensor_board_height], center=true);
 
         translate([40,0,-sensor_board_height])
         cylinder(r=body_od/2, h=2*sensor_board_height, $fn=60);
