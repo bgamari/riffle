@@ -1185,10 +1185,6 @@ Layer(1 "top")
 	Line[1525.00mil 274.00mil 1528.00mil 277.00mil 10.00mil 20.00mil "clearline"]
 	Line[1610.00mil 316.00mil 1610.00mil 265.00mil 10.00mil 20.00mil "clearline"]
 	Line[1610.00mil 265.00mil 1625.00mil 250.00mil 10.00mil 20.00mil "clearline"]
-	Line[1590.00mil 390.00mil 1570.00mil 370.00mil 10.00mil 20.00mil "clearline"]
-	Line[1570.00mil 370.00mil 1570.00mil 330.00mil 10.00mil 20.00mil "clearline"]
-	Line[1570.00mil 330.00mil 1556.00mil 316.00mil 10.00mil 20.00mil "clearline"]
-	Line[1556.00mil 316.00mil 1528.00mil 316.00mil 10.00mil 20.00mil "clearline"]
 	Line[1640.00mil 380.00mil 1630.00mil 390.00mil 10.00mil 20.00mil "clearline"]
 	Line[1630.00mil 390.00mil 1590.00mil 390.00mil 10.00mil 20.00mil "clearline"]
 	Line[1610.00mil 355.00mil 1725.00mil 355.00mil 10.00mil 20.00mil "clearline"]
@@ -1210,6 +1206,9 @@ Layer(1 "top")
 	Line[1500.00mil 450.00mil 1450.00mil 500.00mil 10.00mil 20.00mil "clearline"]
 	Line[1450.00mil 200.00mil 1451.00mil 200.00mil 10.00mil 20.00mil "clearline"]
 	Line[1451.00mil 200.00mil 1505.50mil 254.50mil 10.00mil 20.00mil "clearline"]
+	Line[1528.00mil 355.00mil 1555.00mil 355.00mil 10.00mil 20.00mil "clearline"]
+	Line[1590.00mil 390.00mil 1555.00mil 355.00mil 10.00mil 20.00mil "clearline"]
+	Line[1528.00mil 316.00mil 1610.00mil 316.00mil 10.00mil 20.00mil "clearline"]
 )
 Layer(2 "ground")
 (
@@ -1461,7 +1460,7 @@ NetList()
 	Net("SDA" "(unknown)")
 	(
 		Connect("CONN-6")
-		Connect("U1-5")
+		Connect("U1-6")
 		Connect("U2-7")
 		Connect("U3-6")
 		Connect("U6-15")
