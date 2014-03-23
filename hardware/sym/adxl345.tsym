@@ -1,0 +1,38 @@
+[options]
+wordswap	yes
+rotate_labels	no
+sort_labels	no
+generate_pinseq	yes
+sym_width	2000
+pinwidthvertical	300
+pinwidthhorizontal	300
+
+[geda_attr]
+version	20060113 1
+name	ADXL345
+device	ADXL345
+refdes	U?
+footprint	LGA-14
+description	Three-axis accelerometer
+documentation	http://www.analog.com/
+author	Ben Gamari <bgamari@gmail.com>
+numslots	0
+dist-license
+use-license
+
+[pins]
+#pinnr	seq	type	style	posit.	net	label
+A1		pwr	line	t		VDD
+B1		pwr	line	b		GND
+C1		in	line	r		RESERVED
+C3		in	line	r		RESERVED
+D1		pwr	line	b		GND
+E1		pwr	line	b		GND
+F1		pwr	line	t		Vs
+F2		in	line	l		\_CS\_
+D3		in	line	r		NC
+B3		io	line	l		SDO/ADDR
+A3		io	line	l		SDA/SDI
+A2		in	line	l		SCL/SCLK
+F3		out	line	l		INT1
+E3		out	line	l		INT2
