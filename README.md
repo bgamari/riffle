@@ -17,6 +17,8 @@ The logic board contains,
   * Various other connectors
 
 The MCU runs the [data-logger firmware](http://www.github.com/bgamari/data-logger).
+Schematics can be found in the
+[fab branch](https://github.com/bgamari/water-quality/raw/fab/hardware/schematics.pdf).
 
 ## remote board
 
@@ -31,3 +33,5 @@ measured. This includes,
 
 All of these save the electrical conductivity sensor communicate with the logic
 board over I2C.
+Schematics can be found in the
+[fab branch](https://github.com/bgamari/water-quality/raw/fab/remote-board/schematics.pdf).

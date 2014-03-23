@@ -48,4 +48,4 @@ use-license
 3		pwr	line	l		ADD1/ALERT
 4		in	line	t		V+
 5		io	line	l		ADD0
-5		io	line	l		SDA
+6		io	line	l		SDA

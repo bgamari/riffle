@@ -6,15 +6,15 @@ with_logo = true;
 
 // common dimensions
 body_od = 54;
-body_height = 35;
+body_height = 30;
 
 // square
 square_width = 25.4;
 square_height = 20.0;
 
 // sensor board parameters
-sensor_buffer = 10;
-sensor_board_depth = 8; // radial dimension
+sensor_buffer = 6;
+sensor_board_depth = 10; // radial dimension
 sensor_board_width = 25;
 sensor_board_height = 20; // axial dimension
 
@@ -23,19 +23,20 @@ ec_wire_diam = 38*mil;
 ec_wire_sep = 10;
 
 // cable passage
-passage_width = 5;
-passage_height = 3;
+passage_width = 14;
+passage_height = 2.5;
 
 // eye
 eye_diam = 10;
 
 // screw parameters
 m3_screw_diam = 3.3;
-m3_head_diam = 5.8;
+m3_head_diam = 6.0;
 
 delta = 0.01;
 
 module tube(r_outer, thickness, h) {
+    assign($fn=8)
     difference() {
         cylinder(r=r_outer, h=h);
         translate([0, 0, -1])
@@ -72,10 +73,10 @@ module cap() {
         translate([0, 0, ec_wire_sep*z]) {
             rotate_extrude()
             translate([body_od/2, 0])
-            circle(r=ec_wire_diam/2)
+            circle(r=ec_wire_diam/2);
 
             // EC wire hook
-            translate([body_od/2 - 6, 0, 0])
+            translate([body_od/2 - 7, 0, 0])
             rotate([90, 0, 0])
             cylinder(r=ec_wire_diam/2, h=body_od, center=true);
         }
@@ -84,19 +85,11 @@ module cap() {
         cube([square_width, square_width, 2*square_height], center=true);
 
         // Cable passage
-        translate([delta, 0, -delta+10])
-        translate([body_od/2 - sensor_board_depth, 0, 0])
-        rotate([90, -90, 0])
-        intersection() {
-            rotate_extrude()
-            translate([body_od/2 - sensor_board_depth, 0, 0])
-            scale([passage_height / passage_width, 1])
-            circle(r=passage_width);
-
-            translate([0, 0, -passage_width])
-            cube([body_od, body_od, 2*passage_width]);
-        }
-
+        translate([0, 0, sensor_buffer + passage_height/2])
+        rotate([0, 90, 0])
+        scale([1, passage_width/passage_height, 1])
+        cylinder(r=passage_height/2, h=body_od);
+         
         // Eye
         translate([0, 0, body_height + square_height/2 + 0.6*square_width])
         rotate([90, 0, 0])
@@ -116,6 +109,8 @@ module cap() {
 }
 
 module cap_with_support() {
+    n_supports = 3;
+
     cap($fn=20);
 
     // support for board recess
@@ -124,11 +119,34 @@ module cap_with_support() {
     translate([body_od / 2 - 1, 0, sensor_buffer])
     tube(1, 0.3, sensor_board_height);
 
-    // support for square
-    for (x = [-1:1])
-    for (y = [-1:1])
-    translate([square_width / 4 * x, square_width / 4 * y, 0])
-    tube(1, 0.3, square_height);
+    // support for top of square
+    for (x = [0:n_supports])
+    for (y = [0:n_supports])
+    translate([square_width / (n_supports+1) * (x - n_supports/2),
+               square_width / (n_supports+1) * (y - n_supports/2),
+               0])
+    tube(2.5, 0.3, square_height);
+}
+
+module pouring_jig() {
+    wall = 0.35*7;
+    height = 26;
+    difference() {
+        cube([height, wall*2+sensor_board_width, wall*2+sensor_board_height], center=true);
+
+        translate([height,0,-sensor_board_height])
+        cylinder(r=body_od/2, h=2*sensor_board_height, $fn=60);
+
+        cube([2*height, sensor_board_width, sensor_board_height], center=true);
+    }
 }
 
 cap_with_support();
+
+/*
+rotate([0, 90, 0])
+translate([50,0,0])
+translate([0, 0, sensor_board_height/2 + sensor_buffer])
+rotate(180)
+pouring_jig();
+*/
