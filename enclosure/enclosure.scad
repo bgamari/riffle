@@ -31,7 +31,7 @@ eye_diam = 10;
 
 // screw parameters
 m3_screw_diam = 3.3;
-m3_head_diam = 5.8;
+m3_head_diam = 6.0;
 
 delta = 0.01;
 
@@ -109,6 +109,8 @@ module cap() {
 }
 
 module cap_with_support() {
+    n_supports = 3;
+
     cap($fn=20);
 
     // support for board recess
@@ -118,10 +120,12 @@ module cap_with_support() {
     tube(1, 0.3, sensor_board_height);
 
     // support for top of square
-    for (x = [-1:1])
-    for (y = [-1:1])
-    translate([square_width / 4 * x, square_width / 4 * y, 0])
-    tube(2, 0.3, square_height);
+    for (x = [0:n_supports])
+    for (y = [0:n_supports])
+    translate([square_width / (n_supports+1) * (x - n_supports/2),
+               square_width / (n_supports+1) * (y - n_supports/2),
+               0])
+    tube(2.5, 0.3, square_height);
 }
 
 module pouring_jig() {
