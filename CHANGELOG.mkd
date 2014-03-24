@@ -1,0 +1,23 @@
+# Hardware revisions
+
+## v1
+
+ * Logic board shield on MCHCK, sensor board
+ * Several connectors
+
+## v2
+
+ * Combined connectors into single 10-pin IDC connector
+ * Merged MCHCK onto logic board
+
+## v2.1
+
+ * Fixed various board issues
+
+## v3
+
+ * Added accelerometer onto logic board
+
+## v3.1
+
+ * Simplified EC measurement to use GPIO pins and comparator
