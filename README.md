@@ -35,3 +35,12 @@ All of these save the electrical conductivity sensor communicate with the logic
 board over I2C.
 Schematics can be found in the
 [fab branch](https://github.com/bgamari/water-quality/raw/fab/remote-board/schematics.pdf).
+
+## contributors
+
+ * Laura Dietz (board layout)
+ * Ben Gamari (schematics and board layout)
+ * Don Blair (hardware design ideas)
+ * Joshua Shapiro (helpful discussions regarding conductivity measurement)
+ * Mark Green (helpful design feedback)
+
