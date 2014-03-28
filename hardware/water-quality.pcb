@@ -2423,7 +2423,7 @@ Layer(10 "silk")
 	Line[1390.00mil 2005.00mil 1390.00mil 2045.00mil 10.00mil 20.00mil "clearline"]
 	Line[1370.00mil 2025.00mil 1410.00mil 2025.00mil 10.00mil 20.00mil "clearline"]
 	Line[1470.00mil 2025.00mil 1510.00mil 2025.00mil 10.00mil 20.00mil "clearline"]
-	Text[2125.00mil 1575.00mil 0 122 "v3.1" "clearline"]
+	Text[2125.00mil 1575.00mil 0 122 "v3.2" "clearline"]
 	Text[1195.00mil 2190.00mil 0 100 "DBG" "clearline"]
 	Text[1320.00mil 2255.00mil 0 74 "CLK" "clearline"]
 	Text[1420.00mil 2255.00mil 0 76 "DIO" "clearline"]
