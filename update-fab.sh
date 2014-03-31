@@ -2,6 +2,7 @@
 
 fab_outputs="gerbers front.png back.png schematics.pdf"
 
+commit=$(git rev-parse HEAD)
 cd hardware
 rm -Rf $fab_outputs
 cd ..
@@ -22,5 +23,5 @@ make $fab_outputs
 git add $fab_outputs
 cd ..
 
-git commit -a -m "Update fab"
+git commit -a -m "Fab outputs from $commit"
 git checkout master

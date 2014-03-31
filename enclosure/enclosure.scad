@@ -23,8 +23,8 @@ ec_wire_diam = 38*mil;
 ec_wire_sep = 10;
 
 // cable passage
-passage_width = 14;
-passage_height = 2.5;
+passage_width = 16;
+passage_height = 3.2;
 
 // eye
 eye_diam = 10;
