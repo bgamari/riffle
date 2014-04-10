@@ -56,6 +56,7 @@ module cap() {
             // Logo
             if (with_logo)
             color("SteelBlue")
+            rotate([0,0,90])
             translate([0, 0, body_height + square_height - 0.1])
             scale([0.5, 0.5, 0.3])
             import(file="boots-puddle.stl");
