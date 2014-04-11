@@ -6,7 +6,7 @@ with_logo = true;
 
 // common dimensions
 body_od = 54;
-body_height = 30;
+body_height = 32;
 
 // square
 square_width = 25.4;
@@ -14,13 +14,12 @@ square_height = 20.0;
 
 // sensor board parameters
 sensor_buffer = 6;
-sensor_board_depth = 10; // radial dimension
+sensor_board_depth = 12; // radial dimension
 sensor_board_width = 25;
-sensor_board_height = 20; // axial dimension
+sensor_board_height = 20 + 2; // axial dimension
+sensor_board_rim_depth = 2; // radial
 
-// EC electrode wire
-ec_wire_diam = 38*mil;
-ec_wire_sep = 10;
+ec_electrode_spacing = 10;
 
 // cable passage
 passage_width = 16;
@@ -57,29 +56,26 @@ module cap() {
             // Logo
             if (with_logo)
             color("SteelBlue")
+            rotate([0,0,90])
             translate([0, 0, body_height + square_height - 0.1])
             scale([0.5, 0.5, 0.3])
             import(file="boots-puddle.stl");
+
+            // rim around sensor board recess
+            translate([0.4*body_od, 0, sensor_buffer + sensor_board_height/2])
+            scale([0.80, 1, 1])
+            rotate([90,0,0])
+            cylinder(r=0.6*sensor_board_height, h=sensor_board_width+3, center=true, $fn=40);
         }
+
+        // flatten rim
+        translate([body_od/2 + 10/2, 0, sensor_board_height/2 + sensor_buffer])
+        cube([10, 2*sensor_board_width, 2*sensor_board_height], center=true);
 
         // board recess
         translate([body_od/2 - sensor_board_depth, 0, sensor_buffer])
         translate([0, -sensor_board_width/2, 0])
-        cube([sensor_board_depth, sensor_board_width, sensor_board_height]);
-
-        // EC wire recess
-        for (z = [+1/2, -1/2])
-        translate([0, 0, sensor_buffer+sensor_board_height/2])
-        translate([0, 0, ec_wire_sep*z]) {
-            rotate_extrude()
-            translate([body_od/2, 0])
-            circle(r=ec_wire_diam/2);
-
-            // EC wire hook
-            translate([body_od/2 - 7, 0, 0])
-            rotate([90, 0, 0])
-            cylinder(r=ec_wire_diam/2, h=body_od, center=true);
-        }
+        cube([sensor_board_depth + sensor_board_rim_depth, sensor_board_width, sensor_board_height]);
 
         // Recess for wrench square
         cube([square_width, square_width, 2*square_height], center=true);
@@ -90,7 +86,13 @@ module cap() {
         scale([1, passage_width/passage_height, 1])
         cylinder(r=passage_height/2, h=body_od);
          
+        // EC electrodes
+        for (y=[+1, -1])
+        translate([0.35*body_od, y*ec_electrode_spacing/2, body_height])
+        cylinder(r=3.3/2, h=body_height/2, center=true);
+
         // Eye
+        rotate([0,0,90])
         translate([0, 0, body_height + square_height/2 + 0.6*square_width])
         rotate([90, 0, 0])
         rotate_extrude()
