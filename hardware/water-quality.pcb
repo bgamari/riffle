@@ -2592,11 +2592,6 @@ NetList()
 		Connect("REMOTE-2")
 		Connect("U2-45")
 	)
-	Net("EC_B" "(unknown)")
-	(
-		Connect("REMOTE-9")
-		Connect("U2-30")
-	)
 	Net("EC_OUT" "(unknown)")
 	(
 		Connect("REMOTE-4")
@@ -2702,6 +2697,11 @@ NetList()
 	(
 		Connect("NRF-8")
 		Connect("U2-37")
+	)
+	Net("PIN_A" "(unknown)")
+	(
+		Connect("REMOTE-9")
+		Connect("U2-30")
 	)
 	Net("PRES_EN" "(unknown)")
 	(
