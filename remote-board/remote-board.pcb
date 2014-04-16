@@ -9,7 +9,7 @@ Grid[1000.000000 0.0000 0.0000 0]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[8.00mil 10.00mil 8.00mil 8.00mil 13.00mil 7.00mil]
-Flags("showdrc,nameonpcb,clearnew,snappin,thindrawpoly,locknames")
+Flags("showdrc,nameonpcb,clearnew,snappin,thindrawpoly,onlynames")
 Groups("1,c:2:3,5:4,6,s:7:8")
 Styles["Signal,10.00mil,36.00mil,20.00mil,10.00mil:Power,25.00mil,60.00mil,35.00mil,10.00mil:Fat,40.00mil,60.00mil,35.00mil,10.00mil:Skinny,6.00mil,30.00mil,13.00mil,8.00mil"]
 
@@ -1032,7 +1032,7 @@ Element["found,onsolder" "0603" "R4" "1k" 2080.00mil 12.4580mm -30.00mil -1.3260
 
 	)
 
-Element["found,onsolder" "0603" "R3" "30k" 51.3224mm 12.4540mm -2.0384mm 1.2156mm 0 75 "auto"]
+Element["found,onsolder" "0603" "R3" "30k" 51.3224mm 12.4540mm -2.0384mm -0.0544mm 0 75 "auto"]
 (
 	Pad[-0.0500mm -0.7500mm 0.0500mm -0.7500mm 0.7000mm 12.00mil 0.8524mm "1" "1" "onsolder,square"]
 	Pad[-0.0500mm 0.7500mm 0.0500mm 0.7500mm 0.7000mm 12.00mil 0.8524mm "2" "2" "onsolder,square"]
@@ -1093,7 +1093,7 @@ Element["" "JUMPER1" "ECM" "unknown" 2035.00mil 835.00mil 30.00mil -150.00mil 3 
 
 	)
 
-Element["onsolder" "SOT23-8-65P.fp" "U4" "unknown" 2030.00mil 640.00mil -130.00mil 0.7300mm 0 100 "auto"]
+Element["onsolder" "SOT23-8-65P.fp" "U4" "unknown" 2030.00mil 640.00mil 20.00mil 3.5240mm 0 100 "auto"]
 (
 	Pad[-0.9750mm -1.6750mm -0.9750mm -0.9250mm 0.4500mm 16.00mil 0.6024mm "1" "1" "onsolder,square"]
 	Pad[-0.3250mm -1.6750mm -0.3250mm -0.9250mm 0.4500mm 16.00mil 0.6024mm "2" "2" "onsolder,square"]
@@ -1140,6 +1140,17 @@ Element["found,onsolder" "0603" "C3" "100n" 45.2000mm 850.00mil 60.00mil 0.7300m
 	ElementLine [1.2524mm -0.5524mm 1.2524mm 0.5524mm 6.00mil]
 	ElementLine [-1.2524mm -0.5524mm 1.2524mm -0.5524mm 6.00mil]
 	ElementLine [-1.2524mm -0.5524mm -1.2524mm 0.5524mm 6.00mil]
+
+	)
+
+Element["onsolder" "0603" "C2" "100n" 1930.00mil 620.00mil -20.00mil -1.3020mm 0 77 "auto"]
+(
+	Pad[-0.0500mm -0.7500mm 0.0500mm -0.7500mm 0.7000mm 12.00mil 0.8524mm "1" "1" "onsolder,square"]
+	Pad[-0.0500mm 0.7500mm 0.0500mm 0.7500mm 0.7000mm 12.00mil 0.8524mm "2" "2" "onsolder,square"]
+	ElementLine [0.5524mm -1.2524mm 0.5524mm 1.2524mm 6.00mil]
+	ElementLine [-0.5524mm -1.2524mm 0.5524mm -1.2524mm 6.00mil]
+	ElementLine [-0.5524mm -1.2524mm -0.5524mm 1.2524mm 6.00mil]
+	ElementLine [-0.5524mm 1.2524mm 0.5524mm 1.2524mm 6.00mil]
 
 	)
 Layer(1 "top")
@@ -1389,6 +1400,8 @@ Layer(6 "bottom")
 	Line[45.9500mm 850.00mil 45.9500mm 22.3280mm 25.00mil 20.00mil ""]
 	Line[1789.00mil 772.00mil 1837.00mil 820.00mil 10.00mil 20.00mil "clearline"]
 	Line[1837.00mil 820.00mil 1860.00mil 820.00mil 10.00mil 20.00mil "clearline"]
+	Line[1930.00mil 14.9980mm 1930.00mil 560.00mil 25.00mil 20.00mil ""]
+	Line[1930.00mil 16.4980mm 1930.00mil 710.00mil 25.00mil 20.00mil "clearline"]
 	Polygon("clearpoly")
 	(
 		[1370.00mil 920.00mil] [1430.00mil 960.00mil] [2060.00mil 960.00mil] [2120.00mil 910.00mil] [2120.00mil 130.00mil] 
@@ -1424,6 +1437,7 @@ NetList()
 	Net("+3.3V" "(unknown)")
 	(
 		Connect("C1-2")
+		Connect("C2-2")
 		Connect("C3-2")
 		Connect("C4-2")
 		Connect("CONN-1")
@@ -1456,6 +1470,7 @@ NetList()
 	Net("GND" "(unknown)")
 	(
 		Connect("C1-1")
+		Connect("C2-1")
 		Connect("C3-1")
 		Connect("C4-1")
 		Connect("C6-2")
