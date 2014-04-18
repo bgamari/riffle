@@ -15,7 +15,7 @@ symbols : $(SYMBOLS)
 
 .PHONY : clean
 clean :
-	rm -f $(TSYMBOLS)
+	rm -f $(TSYMBOLS) *.pcb.bak*
 
 pcb : symbols
 	gsch2pcb project | tee pcb.log
