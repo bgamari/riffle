@@ -1464,7 +1464,7 @@ Layer(8 "spare")
 )
 Layer(9 "silk")
 (
-	Text[1500.00mil 880.00mil 0 75 "v3.3" "clearline,onsolder"]
+	Text[1500.00mil 880.00mil 0 75 "v3.4" "clearline,onsolder"]
 	Text[1490.00mil 965.00mil 0 158 "riffle" "clearline,onsolder"]
 	Text[1730.00mil 950.00mil 0 98 "remote board" "clearline,onsolder"]
 )
