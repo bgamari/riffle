@@ -1,0 +1,35 @@
+[options]
+wordswap	yes
+rotate_labels	no
+sort_labels	no
+generate_pinseq	yes
+sym_width	2000
+pinwidthvertical	300
+pinwidthhorizontal	300
+
+[geda_attr]
+version	20060113 1
+name	MMA8451Q
+device	MMA8451Q
+refdes	U?
+footprint	QFN-16
+description	Three-axis accelerometer
+documentation	http://www.freescale.com/
+author	Ben Gamari <bgamari@gmail.com>
+numslots	0
+dist-license
+use-license
+
+[pins]
+#pinnr	seq	type	style	posit.	net	label
+1		pwr	line	t		VDDIO
+2		pwr	line	t		BYP
+4		in	line	l		SCL
+5		pwr	line	b		GND
+6		io	line	l		SDA
+7		in	line	l		SA0
+9		out	line	l		INT2
+10		pwr	line	b		GND
+11		out	line	l		INT1
+12		pwr	line	b		GND
+14		pwr	line	t		VDD
