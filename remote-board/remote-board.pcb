@@ -1285,7 +1285,6 @@ Layer(1 "top")
 	Line[1910.00mil 910.00mil 1950.00mil 870.00mil 10.00mil 20.00mil "clearline"]
 	Line[1910.00mil 910.00mil 1485.00mil 910.00mil 10.00mil 20.00mil "clearline"]
 	Line[1485.00mil 910.00mil 1450.00mil 875.00mil 10.00mil 20.00mil "clearline"]
-	Line[1870.00mil 450.00mil 1950.00mil 450.00mil 25.00mil 20.00mil "clearline"]
 	Line[2060.00mil 120.00mil 2100.00mil 160.00mil 10.00mil 20.00mil "clearline"]
 	Line[1860.00mil 260.00mil 1880.00mil 240.00mil 10.00mil 20.00mil "clearline"]
 	Line[1880.00mil 240.00mil 1880.00mil 4.1790mm 10.00mil 20.00mil "clearline"]
