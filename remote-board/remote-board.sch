@@ -522,3 +522,20 @@ netname=ECM
 }
 T 61400 36700 9 12 1 0 0 0 1
 Pull-down floating EC net
+C 62550 36500 1 180 0 resistor-1.sym
+{
+T 62250 36100 5 10 0 0 180 0 1
+device=RESISTOR
+T 61950 36200 5 10 1 1 180 0 1
+refdes=R7
+T 62550 36500 5 10 0 1 90 0 1
+footprint=0603
+T 62050 36200 5 10 1 1 180 6 1
+value=100k
+}
+C 62850 36500 1 90 1 gnd-1.sym
+N 61650 36400 61250 36400 4
+{
+T 60800 36350 5 10 1 1 0 0 1
+netname=ECM
+}
