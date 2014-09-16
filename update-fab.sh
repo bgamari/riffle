@@ -6,9 +6,6 @@ commit=$(git rev-parse HEAD)
 cd hardware
 rm -Rf $fab_outputs
 cd ..
-cd remote-board
-rm -Rf $fab_outputs
-cd ..
 
 git checkout fab
 git merge master
