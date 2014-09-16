@@ -18,10 +18,5 @@ make $fab_outputs
 git add $fab_outputs
 cd ..
 
-cd remote-board
-make $fab_outputs
-git add $fab_outputs
-cd ..
-
 git commit -a -m "Fab outputs from $commit"
 git checkout master
