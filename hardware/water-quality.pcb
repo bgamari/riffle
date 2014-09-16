@@ -1852,18 +1852,16 @@ Element["" "0603" "C15" "1u" 2710.00mil 43.1680mm 2.0000mm 0.0000 3 100 ""]
 
 	)
 
-Element["" "0603" "C21" "100n" 725.00mil 1950.00mil 0.0000 -2.0000mm 0 100 ""]
+Element["onsolder" "0603" "C21" "100n" 56.8680mm 52.4660mm 0.0000 2.0000mm 0 100 "auto"]
 (
-	Pad[-0.7500mm -0.0500mm -0.7500mm 0.0500mm 0.7000mm 12.00mil 0.8524mm "1" "1" "square"]
-	Pad[0.7500mm -0.0500mm 0.7500mm 0.0500mm 0.7000mm 12.00mil 0.8524mm "2" "2" "square"]
-	ElementLine [1.2524mm 0.5524mm -1.2524mm 0.5524mm 6.00mil]
-	ElementLine [-1.2524mm 0.5524mm -1.2524mm -0.5524mm 6.00mil]
-	ElementLine [-1.2524mm -0.5524mm 1.2524mm -0.5524mm 6.00mil]
-	ElementLine [1.2524mm -0.5524mm 1.2524mm 0.5524mm 6.00mil]
+	Pad[-0.7500mm 0.0500mm -0.7500mm -0.0500mm 0.7000mm 12.00mil 0.8524mm "1" "1" "onsolder,square"]
+	Pad[0.7500mm 0.0500mm 0.7500mm -0.0500mm 0.7000mm 12.00mil 0.8524mm "2" "2" "onsolder,square"]
+	ElementLine [1.2524mm -0.5524mm -1.2524mm -0.5524mm 6.00mil]
+	ElementLine [-1.2524mm -0.5524mm -1.2524mm 0.5524mm 6.00mil]
+	ElementLine [-1.2524mm 0.5524mm 1.2524mm 0.5524mm 6.00mil]
+	ElementLine [1.2524mm 0.5524mm 1.2524mm -0.5524mm 6.00mil]
 
 	)
-Rat[1175.00mil 1825.00mil 1 19.1650mm 49.4800mm 0  ""]
-Rat[1250.00mil 1725.00mil 1 17.6650mm 49.4800mm 0  ""]
 Layer(1 "top")
 (
 	Line[42.8899mm 1656.10mil 39.2300mm 1656.10mil 10.00mil 20.00mil "clearline"]
@@ -2511,6 +2509,9 @@ Layer(2 "ground")
 	Line[1590.00mil 2020.00mil 1578.00mil 2008.00mil 10.00mil 20.00mil "clearline"]
 	Line[1590.00mil 2180.00mil 1590.00mil 2215.00mil 10.00mil 20.00mil "clearline"]
 	Line[1590.00mil 2215.00mil 1625.00mil 2250.00mil 10.00mil 20.00mil "clearline"]
+	Line[57.6180mm 52.4660mm 58.3080mm 52.4660mm 10.00mil 20.00mil "clearline"]
+	Line[58.3080mm 52.4660mm 2300.00mil 2070.00mil 10.00mil 20.00mil "clearline"]
+	Line[56.1180mm 52.4660mm 55.2600mm 52.4660mm 10.00mil 20.00mil ""]
 	Polygon("clearpoly")
 	(
 		[1125.00mil 2200.00mil] [1123.50mil 1250.00mil] [1223.50mil 1150.00mil] [3000.00mil 1150.00mil] [3100.00mil 1250.00mil] 
