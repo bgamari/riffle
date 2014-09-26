@@ -1,0 +1,31 @@
+[options]
+wordswap	yes
+rotate_labels	no
+sort_labels	no
+generate_pinseq	yes
+sym_width	2000
+pinwidthvertical	300
+pinwidthhorizontal	300
+
+[geda_attr]
+version	20060113 1
+name	BMP180
+device	BMP180
+refdes	U?
+footprint	bmp180
+description	Barometric pressure sensor
+documentation	http://www.bosch.com/
+author	Ben Gamari <bgamari@gmail.com>
+numslots	0
+dist-license
+use-license
+
+[pins]
+#pinnr	seq	type	style	posit.	net	label
+1		in	line	l		CSB
+2		pwr	line	t		VDD
+3		pwr	line	t		VDDIO
+4		out	line	l		SDO
+5		in	line	l		SCL
+6		io	line	l		SDA
+7		pwr	line	b		GND
