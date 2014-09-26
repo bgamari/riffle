@@ -32,6 +32,10 @@ pcb : symbols
 %.sch.pdf : %.sch
 	gaf export -o $@ $<
 
+%.zip : %
+	rm -f $@
+	zip -j $@ $</*
+
 schematics.pdf : $(name).sch.pdf $(SCHEMATICS:.sch=.sch.pdf)
 	pdfjoin -o $@ $+
 
@@ -48,6 +52,14 @@ gerbers.zip : gerbers
 	rm -f $@
 	zip -j $@ gerbers/*
 
+.PHONY : stencil-gerbers
+stencil-gerbers : gerbers
+	rm -Rf $@
+	mkdir -p $@
+	cp gerbers/$(name).outline.gbr "$@/Board Outline.ger"
+	cp gerbers/$(name).toppaste.gbr "$@/Top Paste.ger"
+	cp gerbers/$(name).bottompaste.gbr "$@/Bottom Paste.ger"
+
 .PHONY : osh-park-gerbers
 osh-park-gerbers : gerbers
 	rm -Rf $@
@@ -62,10 +74,6 @@ osh-park-gerbers : gerbers
 	cp gerbers/$(name).group1.gbr "$@/layer1.g2l" || true
 	cp gerbers/$(name).group2.gbr "$@/layer2.g3l" || true
 	cp gerbers/$(name).plated-drill.cnc "$@/Drills.xln"
-
-osh-park-gerbers.zip : osh-park-gerbers
-	rm -f $@
-	zip -j $@ osh-park-gerbers/*
 
 hackvana-gerbers : gerbers
 	rm -Rf $@

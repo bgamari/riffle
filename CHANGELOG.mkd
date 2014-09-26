@@ -13,12 +13,23 @@
 ## v2.1
 
  * Fixed various board issues
- * Switch to TMP100
+ * Switch to TMP100 temperature sensor
 
 ## v3
 
- * Added accelerometer onto logic board
+ * Added accelerometer (MMA8451Q) onto logic board
 
 ## v3.1
 
  * Simplified EC measurement to use GPIO pins and comparator
+
+## v4.0
+
+ * Merged remote board and logic board
+ * Removed sensor voltage supply switching
+ * Removed pressure sensor
+
+## v4.1
+
+ * Added BMP180 pressure sensor
+
