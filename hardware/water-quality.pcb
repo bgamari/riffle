@@ -5,11 +5,11 @@ FileVersion[20091103]
 
 PCB["riffle" 6000.00mil 5000.00mil]
 
-Grid[1000.000000 0.0000 0.0000 0]
+Grid[500.000000 0.0000 0.0000 0]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[6.00mil 10.00mil 6.00mil 6.00mil 13.00mil 8.00mil]
-Flags("showdrc,nameonpcb,clearnew,snappin,thindrawpoly,locknames")
+Flags("showdrc,nameonpcb,clearnew,snappin,thindrawpoly")
 Groups("1,8,c:2,s:3:4:5:6:7")
 Styles["Signal,10.00mil,36.00mil,20.00mil,10.00mil:Power,25.00mil,60.00mil,35.00mil,10.00mil:Fat,0.40mil,0.60mil,0.35mil,0.10mil:Skinny,8.00mil,34.00mil,15.00mil,6.00mil"]
 
@@ -786,7 +786,7 @@ Symbol['~' 12.00mil]
 	SymbolLine[20.00mil 35.00mil 25.00mil 30.00mil 8.00mil]
 )
 Attribute("PCB::grid::unit" "mil")
-Attribute("PCB::grid::size" "10.00mil")
+Attribute("PCB::grid::size" "5.00mil")
 Via[1635.00mil 1830.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
 Via[1585.00mil 1610.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
 Via[2070.00mil 1280.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
@@ -2610,6 +2610,7 @@ Layer(9 "silk")
 	Text[2060.00mil 2125.00mil 2 77 "3V3" "clearline,onsolder"]
 	Text[1855.00mil 2125.00mil 2 77 "DIO" "clearline,onsolder"]
 	Text[1760.00mil 2125.00mil 2 77 "CLK" "clearline,onsolder"]
+	Text[1635.00mil 2125.00mil 2 77 "B" "clearline,onsolder"]
 	Polygon("clearpoly")
 	(
 		[61.6443mm 51.8125mm] [61.5892mm 52.0510mm] [61.5630mm 2050.50mil] [61.5257mm 2050.50mil] [61.0131mm 52.0096mm] 
@@ -2693,11 +2694,16 @@ Layer(10 "silk")
 	Line[1223.50mil 1205.00mil 1223.50mil 1245.00mil 10.00mil 20.00mil "clearline"]
 	Line[1203.50mil 1225.00mil 1243.50mil 1225.00mil 10.00mil 20.00mil "clearline"]
 	Line[1143.50mil 1380.00mil 1143.50mil 1420.00mil 10.00mil 20.00mil "clearline"]
+	Line[2300.00mil 1910.00mil 2320.00mil 1930.00mil 10.00mil 20.00mil "clearline"]
+	Line[2750.00mil 1560.00mil 2730.00mil 1540.00mil 10.00mil 20.00mil "clearline"]
+	Line[2850.00mil 1990.00mil 2870.00mil 2010.00mil 10.00mil 20.00mil "clearline"]
+	Line[2230.00mil 2090.00mil 2250.00mil 2110.00mil 10.00mil 20.00mil "clearline"]
 	Text[2125.00mil 1575.00mil 0 122 "v4.1" "clearline"]
 	Text[1980.00mil 2135.00mil 0 76 "SDA" "clearline"]
 	Text[1800.00mil 2135.00mil 0 77 "TX" "clearline"]
 	Text[1885.00mil 2135.00mil 0 75 "SCL" "clearline"]
 	Text[1695.00mil 2135.00mil 0 77 "RX" "clearline"]
+	Text[1615.00mil 2135.00mil 0 77 "A" "clearline"]
 	Polygon("pin,via")
 	(
 		[35.5257mm 50.7439mm] [35.5051mm 1998.50mil] [35.4980mm 50.7987mm] [1397.30mil 50.8333mm] [35.4294mm 51.1696mm] 
