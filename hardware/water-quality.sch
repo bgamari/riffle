@@ -958,9 +958,15 @@ N 48200 25400 48200 26000 4
 T 48300 26100 5 10 1 1 90 0 1
 netname=SD_DETECT
 }
-T 47600 35600 9 12 1 0 0 0 2
-Mount L3 for step-up
-Mount L1 for step-down (LM3671)
+T 50600 34400 9 12 1 0 0 0 8
+Step-up:
+  Mount L3
+
+LM3671 (step-down):
+  Mount L1
+  Don't mount L3
+
+
 C 60200 25800 1 0 0 3.3V-plus-1.sym
 C 60300 23100 1 0 0 gnd-1.sym
 C 60600 23100 1 0 0 gnd-1.sym
