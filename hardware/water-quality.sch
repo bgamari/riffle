@@ -169,7 +169,7 @@ device=RESISTOR
 T 67700 32700 5 10 1 1 270 0 1
 refdes=R7
 T 67700 32300 5 10 1 1 270 0 1
-value=10k
+value=3k
 T 68100 31900 5 10 0 0 270 0 1
 footprint=0603
 }
@@ -180,7 +180,7 @@ device=RESISTOR
 T 68300 33100 5 10 1 1 270 0 1
 refdes=R8
 T 68300 32700 5 10 1 1 270 0 1
-value=10k
+value=3k
 T 68700 32300 5 10 0 0 270 0 1
 footprint=0603
 }
