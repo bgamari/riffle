@@ -29,7 +29,12 @@
  * Removed sensor voltage supply switching
  * Removed pressure sensor
 
-## v4.1
+## v4.1 (never produced)
 
  * Added BMP180 pressure sensor
 
+## v4.2
+
+ * A few pinning changes, shuffled traces around to preserve ground plane
+ * Manufacturability improvements
+ * Lowered I2C pull-up resistor values
