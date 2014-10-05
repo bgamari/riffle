@@ -872,7 +872,6 @@ Via[1350.00mil 1620.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
 Via[1380.00mil 1690.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
 Via[1870.00mil 1450.00mil 34.00mil 12.00mil 0.0000 15.00mil "" ""]
 Via[2790.00mil 1800.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
-Via[1660.00mil 1550.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
 Via[1320.00mil 2070.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
 Via[1640.00mil 1920.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
 Via[1520.00mil 1540.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
@@ -889,6 +888,7 @@ Via[1910.00mil 1430.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
 Via[1955.00mil 1420.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
 Via[2200.00mil 1435.00mil 34.00mil 12.00mil 0.0000 15.00mil "" ""]
 Via[2655.00mil 1385.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
+Via[1665.00mil 1550.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
 
 Element["" "0805" "L1" "2.2u" 1600.00mil 1375.00mil -26.50mil 58.50mil 0 77 ""]
 (
@@ -913,8 +913,8 @@ Element["" "SOT23" "Q1" "unknown" 1875.00mil 1197.00mil 123.00mil 10.00mil 0 100
 
 Element["" "0603" "D1" "unknown" 1350.00mil 1525.00mil -10.91mil 39.09mil 0 75 ""]
 (
-	Pad[-4.92mil 25.59mil 4.92mil 25.59mil 29.52mil 20.00mil 35.52mil "1" "1" "square"]
-	Pad[-4.92mil -25.59mil 4.92mil -25.59mil 29.52mil 20.00mil 35.52mil "2" "2" "square"]
+	Pad[-4.92mil 25.59mil 4.92mil 25.59mil 39.52mil 20.00mil 45.52mil "1" "1" "square"]
+	Pad[-4.92mil -25.59mil 4.92mil -25.59mil 39.52mil 20.00mil 45.52mil "2" "2" "square"]
 
 	)
 
@@ -1191,7 +1191,7 @@ Element["" "0603" "C11" "10u" 2550.00mil 1300.00mil -45.00mil -1.7460mm 0 76 ""]
 
 	)
 
-Element["" "micro-usb" "USB" "unknown" 27.7600mm 42.0550mm 35.00mil 195.00mil 0 100 ""]
+Element["selected" "micro-usb" "USB" "unknown" 27.7600mm 42.0550mm 35.00mil 195.00mil 0 100 "selected"]
 (
 	Pad[3.6000mm -1.3000mm 5.5000mm -1.3000mm 0.4000mm 20.00mil 25.75mil "VCC" "1" "square,edge2"]
 	Pad[3.6000mm -0.6500mm 5.5000mm -0.6500mm 0.4000mm 20.00mil 25.75mil "D-" "2" "square,edge2"]
@@ -1438,8 +1438,8 @@ Element["" "JUMPER2" "PWR" "unknown" 1223.50mil 1300.00mil -50.00mil -45.00mil 3
 
 Element["" "0603" "D2" "unknown" 1325.00mil 1300.00mil -17.09mil -70.91mil 0 53 ""]
 (
-	Pad[-4.92mil -25.59mil 4.92mil -25.59mil 29.52mil 20.00mil 35.52mil "1" "1" "square"]
-	Pad[-4.92mil 25.59mil 4.92mil 25.59mil 29.52mil 20.00mil 35.52mil "2" "2" "square"]
+	Pad[-4.92mil -25.59mil 4.92mil -25.59mil 39.52mil 20.00mil 45.52mil "1" "1" "square"]
+	Pad[-4.92mil 25.59mil 4.92mil 25.59mil 39.52mil 20.00mil 45.52mil "2" "2" "square"]
 
 	)
 
