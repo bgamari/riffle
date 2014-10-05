@@ -807,7 +807,7 @@ Via[2200.00mil 1360.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
 Via[1675.00mil 1275.00mil 60.00mil 20.00mil 0.0000 35.00mil "" ""]
 Via[1700.00mil 1460.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
 Via[2325.00mil 1825.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
-Via[2350.00mil 1700.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
+Via[2360.00mil 1725.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
 Via[1380.00mil 1280.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
 Via[1260.00mil 1200.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
 Via[1475.00mil 1375.00mil 60.00mil 20.00mil 0.0000 35.00mil "" "thermal(1X)"]
@@ -1191,7 +1191,7 @@ Element["" "0603" "C11" "10u" 2550.00mil 1300.00mil -45.00mil -1.7460mm 0 76 ""]
 
 	)
 
-Element["selected" "micro-usb" "USB" "unknown" 27.7600mm 42.0550mm 35.00mil 195.00mil 0 100 "selected"]
+Element["" "micro-usb" "USB" "unknown" 27.7600mm 42.0550mm 35.00mil 195.00mil 0 100 ""]
 (
 	Pad[3.6000mm -1.3000mm 5.5000mm -1.3000mm 0.4000mm 20.00mil 25.75mil "VCC" "1" "square,edge2"]
 	Pad[3.6000mm -0.6500mm 5.5000mm -0.6500mm 0.4000mm 20.00mil 25.75mil "D-" "2" "square,edge2"]
@@ -2367,7 +2367,7 @@ Layer(1 "top")
 	Line[42.8900mm 38.6440mm 1660.00mil 1550.00mil 10.00mil 20.00mil "clearline"]
 	Line[1720.00mil 1390.00mil 44.4620mm 1390.00mil 10.00mil 20.00mil "clearline"]
 	Line[59.0430mm 1725.00mil 2325.00mil 1725.00mil 10.00mil 20.00mil "clearline"]
-	Line[2325.00mil 1725.00mil 2350.00mil 1700.00mil 10.00mil 20.00mil "clearline"]
+	Line[2325.00mil 1725.00mil 2360.00mil 1725.00mil 10.00mil 20.00mil "clearline"]
 	Line[1510.00mil 1920.00mil 1630.00mil 1920.00mil 25.00mil 20.00mil "clearline"]
 	Line[37.8340mm 1530.00mil 1510.00mil 1530.00mil 10.00mil 20.00mil "clearline"]
 	Line[1510.00mil 1530.00mil 1520.00mil 1540.00mil 10.00mil 20.00mil "clearline"]
@@ -2573,7 +2573,7 @@ Layer(2 "ground")
 	Line[2215.00mil 1435.00mil 2260.00mil 1390.00mil 10.00mil 20.00mil "clearline"]
 	Line[2285.00mil 1495.00mil 57.0140mm 1495.00mil 10.00mil 20.00mil "clearline"]
 	Line[57.0140mm 1495.00mil 56.6900mm 37.6490mm 10.00mil 20.00mil "clearline"]
-	Polygon("clearpoly")
+	Polygon("found,clearpoly")
 	(
 		[1125.00mil 2200.00mil] [1123.50mil 1250.00mil] [1223.50mil 1150.00mil] [3000.00mil 1150.00mil] [3100.00mil 1250.00mil] 
 		[3100.00mil 2200.00mil] [3000.00mil 2300.00mil] [1225.00mil 2300.00mil] 
