@@ -2715,7 +2715,7 @@ Layer(10 "silk")
 	Line[2750.00mil 1560.00mil 2730.00mil 1540.00mil 10.00mil 20.00mil "clearline"]
 	Line[2850.00mil 1990.00mil 2870.00mil 2010.00mil 10.00mil 20.00mil "clearline"]
 	Line[2230.00mil 2090.00mil 2250.00mil 2110.00mil 10.00mil 20.00mil "clearline"]
-	Text[2125.00mil 1575.00mil 0 122 "v4.1" "clearline"]
+	Text[2125.00mil 1575.00mil 0 122 "v4.2" "clearline"]
 	Text[1980.00mil 2135.00mil 0 76 "SDA" "clearline"]
 	Text[1800.00mil 2135.00mil 0 77 "TX" "clearline"]
 	Text[1885.00mil 2135.00mil 0 75 "SCL" "clearline"]
