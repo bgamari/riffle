@@ -5,7 +5,7 @@ FileVersion[20091103]
 
 PCB["riffle" 6000.00mil 5000.00mil]
 
-Grid[500.000000 0.0000 0.0000 0]
+Grid[1000.000000 0.0000 0.0000 0]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[6.00mil 10.00mil 6.00mil 6.00mil 13.00mil 8.00mil]
@@ -786,7 +786,7 @@ Symbol['~' 12.00mil]
 	SymbolLine[20.00mil 35.00mil 25.00mil 30.00mil 8.00mil]
 )
 Attribute("PCB::grid::unit" "mil")
-Attribute("PCB::grid::size" "5.00mil")
+Attribute("PCB::grid::size" "10.00mil")
 Via[1635.00mil 1830.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
 Via[1600.00mil 1620.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
 Via[1840.00mil 1380.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
@@ -816,7 +816,6 @@ Via[1250.00mil 1900.00mil 60.00mil 20.00mil 0.0000 35.00mil "" ""]
 Via[1450.00mil 1475.00mil 60.00mil 20.00mil 0.0000 35.00mil "" ""]
 Via[1725.00mil 1950.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
 Via[1275.00mil 1800.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
-Via[2720.00mil 1490.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
 Via[2850.00mil 1475.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
 Via[3050.00mil 1350.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
 Via[3020.00mil 1240.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
@@ -889,6 +888,7 @@ Via[1955.00mil 1420.00mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
 Via[2200.00mil 1435.00mil 34.00mil 12.00mil 0.0000 15.00mil "" ""]
 Via[2655.00mil 1385.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
 Via[1665.00mil 1550.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
+Via[2730.00mil 1440.00mil 36.00mil 20.00mil 0.0000 20.00mil "" "thermal(1X)"]
 
 Element["" "0805" "L1" "2.2u" 1600.00mil 1375.00mil -26.50mil 58.50mil 0 77 ""]
 (
@@ -1406,7 +1406,7 @@ Element["" "TSSOP16" "U7" "unknown" 2795.00mil 2155.00mil -150.00mil -170.00mil 
 
 	)
 
-Element["" "TCS3472" "U6" "unknown" 2150.00mil 2040.00mil 25.00mil 1.3020mm 0 100 ""]
+Element["" "TCS3472" "U6" "unknown" 2160.00mil 2040.00mil 25.00mil 1.3020mm 0 100 ""]
 (
 	Pad[0.4500mm 0.6500mm 1.5500mm 0.6500mm 0.4000mm 0.0000 0.4000mm "VDD" "1" "square,edge2"]
 	Pad[0.4500mm 0.0000 1.5500mm 0.0000 0.4000mm 0.0000 0.4000mm "SCL" "2" "square,edge2"]
@@ -2120,8 +2120,6 @@ Layer(1 "top")
 	Line[72.3600mm 38.0700mm 72.3600mm 37.4950mm 10.00mil 20.00mil "clearline"]
 	Line[72.3600mm 37.4950mm 2850.00mil 1475.00mil 10.00mil 20.00mil "clearline"]
 	Line[2775.00mil 1575.00mil 2775.00mil 1500.00mil 10.00mil 20.00mil "clearline"]
-	Line[2775.00mil 36.6000mm 69.5600mm 36.6000mm 10.00mil 20.00mil "clearline"]
-	Line[69.5600mm 36.6000mm 2725.00mil 36.9450mm 10.00mil 20.00mil "clearline"]
 	Line[72.3600mm 35.8850mm 69.6550mm 35.8850mm 10.00mil 20.00mil "clearline"]
 	Line[69.6550mm 35.8850mm 2700.00mil 34.8100mm 10.00mil 20.00mil "clearline"]
 	Line[74.9600mm 36.5350mm 75.0450mm 36.6200mm 10.00mil 20.00mil "clearline"]
@@ -2374,8 +2372,6 @@ Layer(1 "top")
 	Line[32.9050mm 1200.00mil 1260.00mil 1200.00mil 10.00mil 20.00mil "clearline"]
 	Line[3020.00mil 1240.00mil 76.8110mm 1240.00mil 10.00mil 20.00mil "clearline"]
 	Line[76.8110mm 1240.00mil 3050.00mil 32.1550mm 10.00mil 20.00mil "clearline"]
-	Line[2725.00mil 36.9450mm 2725.00mil 1485.00mil 10.00mil 20.00mil "clearline"]
-	Line[2725.00mil 1485.00mil 2720.00mil 1490.00mil 10.00mil 20.00mil "clearline"]
 	Line[32.3100mm 43.3550mm 33.9570mm 43.3550mm 10.00mil 20.00mil "clearline"]
 	Line[33.9570mm 43.3550mm 1340.00mil 1710.00mil 10.00mil 20.00mil "clearline"]
 	Line[1600.00mil 1760.00mil 1240.00mil 1760.00mil 10.00mil 20.00mil "clearline"]
@@ -2432,6 +2428,8 @@ Layer(1 "top")
 	Line[2030.00mil 1500.00mil 2170.00mil 1500.00mil 10.00mil 20.00mil "clearline"]
 	Line[66.9530mm 34.2780mm 66.9530mm 34.6950mm 10.00mil 20.00mil "clearline"]
 	Line[66.9530mm 34.6950mm 2655.00mil 1385.00mil 10.00mil 20.00mil "clearline"]
+	Line[2775.00mil 36.6000mm 69.3660mm 36.6000mm 10.00mil 20.00mil "clearline"]
+	Line[69.3660mm 36.6000mm 2730.00mil 1440.00mil 10.00mil 20.00mil "clearline"]
 )
 Layer(2 "ground")
 (
@@ -2573,7 +2571,7 @@ Layer(2 "ground")
 	Line[2215.00mil 1435.00mil 2260.00mil 1390.00mil 10.00mil 20.00mil "clearline"]
 	Line[2285.00mil 1495.00mil 57.0140mm 1495.00mil 10.00mil 20.00mil "clearline"]
 	Line[57.0140mm 1495.00mil 56.6900mm 37.6490mm 10.00mil 20.00mil "clearline"]
-	Polygon("found,clearpoly")
+	Polygon("clearpoly")
 	(
 		[1125.00mil 2200.00mil] [1123.50mil 1250.00mil] [1223.50mil 1150.00mil] [3000.00mil 1150.00mil] [3100.00mil 1250.00mil] 
 		[3100.00mil 2200.00mil] [3000.00mil 2300.00mil] [1225.00mil 2300.00mil] 
